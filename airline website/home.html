@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -259,3 +260,266 @@
     </footer>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="veiwport" content="width-device-width, initial-scale=1.0" />
+    <title>Airlines</title>
+    <link rel="stylesheet" href="external.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        scroll-behavior: smooth;
+      }
+      .nav-bar {
+        background-color: black;
+        margin-top: 0;
+        width: 100%;
+      }
+
+      .class1 {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+      }
+
+      .photo {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-image: url("images/plane.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        display: table;
+      }
+
+      .paraphoto {
+        max-width: 450px;
+        min-width: 320px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .paraphoto h1 {
+        font-family: "Century Gothic", sans-serif;
+        color: white;
+        font-size: 50px;
+      }
+
+      .paraphoto a {
+        color: white;
+        font-family: "Century Gothic", sans-serif;
+        text-decoration: none;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-weight: bold;
+      }
+
+      .paraphoto a:hover {
+        color: rgb(0, 200, 255);
+        border: 2px solid rgb(0, 200, 255);
+      }
+    </style>
+
+    <script>
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 5) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+  </head>
+
+  <body>
+    <section class="nav-bar">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#"><img src="" /><img /></a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"
+              ><span class="material-icons"></span></a>
+          </div>
+          <ul class="nav-list selected">
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="#ttt">Flights</a>
+            </li>
+            <li>
+              <a href="faq&feedb.html">FaQ & Feedback</a>
+            </li>
+            <li>
+              <a href="#yyy">About</a>
+            </li>
+            <li>
+              <a href="login.html">Login or Register</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <div id="top" class="class1">
+      <section class="photo">
+        <div class="paraphoto">
+          <h1>Travel With Us</h1>
+          <a href="bookflight.html">GET STARTED</a>
+        </div>
+      </section>
+    </div>
+
+    <section>
+      <div class="Flights" id="ttt">
+        <h1 class="ppp">lets tour the world</h1>
+      </div>
+
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <input type="radio" name="radio-btn" id="radio5" />
+
+          <div class="slide first">
+            <img src="images/paris.jpg" alt="" />
+          </div>
+
+          <div class="slide">
+            <img src="images/Pisa.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/newyork.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/burj-khalifa.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/brazil.jpg" alt="" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+        </div>
+
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+        </div>
+      </div>
+    </section>
+
+    <div></div>
+
+    <div class="headingg" id="yyy">
+      <h1>About Us</h1>
+      <p>
+        Welcome to , a leading airline with a rich history and a commitment to
+        delivering exceptional service to our passengers. Since our
+        establishment 12 years ago, we have grown to become one of the most
+        trusted airlines in the industry.
+      </p>
+    </div>
+
+    <div class="cont">
+      <section class="about">
+        <div class="about-image">
+          <img src="images/image1.jpg" />
+        </div>
+        <div class="about-content">
+          <h2></h2>
+          <p>
+            Our mission is to provide safe, comfortable, and reliable air travel
+            to destinations around the world. We strive to exceed our customers'
+            expectations by offering exceptional service, innovative technology,
+            and convenient schedules. At , we are proud of our dedicated team of
+            professionals who are committed to ensuring your travel experience
+            is comfortable and stress-free. Our pilots, flight attendants,
+            ground crew, and customer service representatives are among the most
+            experienced and caring in the industry. We are passionate about
+            delivering the highest levels of safety, comfort, and convenience to
+            our passengers. We are committed to sustainability and reducing our
+            impact on the environment. We are constantly exploring innovative
+            ways to reduce our carbon footprint and ensure that our operations
+            are as eco-friendly as possible.Thank you for choosing [Airline
+            Name]. We look forward to welcoming you on board and providing you
+            with an unforgettable travel experience.
+          </p>
+          <a href="" class="read-more">Read More</a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="contain">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+>>>>>>> d993208a91bb4af337db207f22e9c79365ccccf2

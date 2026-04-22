@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!Doctype html>
 <html>
 <head>
@@ -175,4 +176,183 @@ table {
 
 <script src="js.js"></script>
 </body>
+=======
+<!Doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="veiwport" content="width-device-width, initial-scale=1.0">
+  <title>bookflight</title>
+  <link rel="stylesheet" href="external.css">
+
+<style>
+
+  body{
+    background-image: url(images/Rouche.jpg) ;
+    background-size:cover;
+    background-position: center;
+
+}
+/* New styles for the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+ 
+ 
+</style>
+
+
+</head>
+
+<body>
+   
+  <section class="nav-bar">
+    <div class="nav-container">
+      <div class="brand">
+          <a href="#"><img src=""><img></a>
+        
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span class="material-icons"></span></a></div>
+        <ul class="nav-list selected">
+        <li>
+              <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="#ttt">Flights</a>
+          </li>
+          <li>
+            <a href="faq&feedb.html">FaQ & Feedback</a>
+          </li>
+          <li>
+              <a href="#yyy">About</a>
+          </li>
+          <li>
+            <a href="login.html">Login or Register</a>
+          </li>
+    
+        </ul>
+      </nav>
+    </div>
+  </section> 
+
+
+      <div class="container1">
+        
+        <form class="form-group">
+          <div class="form">
+
+            <h2 class="text-b">Booking Details</h2> 
+            
+            <div class="input1">
+            <input type="text" class="input-group" id="text-from" placeholder="From">
+            <input type="text" class="input-group" id="text-to" placeholder="To">
+            <select class="input-group">
+              <option value="">Preffered Seating</option>
+              <option value="">Economy Class</option>
+              <option value="">Business Class</option>
+              <option value="">First Class</option>
+
+            </select>
+
+           </div>
+           
+           <div class="input2">
+            <input type="text" class="input-group" placeholder="Age" id="age">
+           
+
+           </div>
+           
+          
+
+           <div class="input3">
+            <span class="text-select">Select Your Fare</span>
+             <input type="radio" class="input-group" name="r">
+            <label class="text-choice" for="input-group">One way</label>
+             <input type="radio" class="input-group" name="r">
+            <label class="text-choice" for="input-group">Round Trip</label>
+          
+           </div>
+
+           <div class="input4">
+            <input type="date" class="input-group" id="return-date" placeholder="Return Date">
+            <input type="time" class="input-group" placeholder="Return time" id="return-time">
+            <input type="text" class="input-group1" placeholder="Any Message">
+
+           </div>
+
+           <div class="input5">
+            <h2 class="text-choice">Personal Details</h2>
+
+           </div>
+
+           <div class="input6">
+            <input type="text" class="input-group" placeholder="Full Name" id="full-name">
+            <input type="text" class="input-group" placeholder="Phone Number" id="phone">
+            <input type="email" class="input-group1" placeholder="Enter your Email" id="email">
+
+           </div>
+
+           <div id="errmessages" class="message"></div> 
+       
+           <div id="errmessages1" class="message"></div>
+        
+           <div id="errmessages2" class="message"></div>
+        
+           <button type="button" onclick="makeabooking()" class="btn-booking">Submit Form</button>
+           <button type="reset" class="btn-booking-clear">Clear Form</button>
+
+      <div id="bookCountMessage" style="display: none; margin-top: 10px"></div>
+
+      <table id="bookingsTable" style="display: none; margin-top: 20px;">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Phone Number</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Return Date</th>
+            <th>Return Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="bookPostsContainer"></tbody>
+      </table>
+
+    </form>
+  </div>
+      
+      
+
+
+<script src="js.js"></script>
+</body>
+>>>>>>> d993208a91bb4af337db207f22e9c79365ccccf2
 <html>
