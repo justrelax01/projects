@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA249A73-04B2-6AC8-1D9B-FA9D7260832E" name="Package">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>534B745F-2900-589E-75C3-460E57A9B0BC</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PackageID" id="2CF289F3-3917-C9FA-E69C-2C19FEB78E88">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>B3092527-397C-91E1-7218-26BB39C32FC0</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NamePackage" id="4E21D99B-5402-D500-D4A4-C48081991DE2">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>9D19EAA1-8BCE-16EF-5657-59978A68CA8A</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rating" id="9D0C2AB1-8B15-4805-05DD-E85DE15F353B">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>847F9BA8-9C6A-FF97-2FB7-10DFA0ACCD5D</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PricePackage" id="1729AF2E-9E5B-84E3-E5E6-BA167937D785">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>78D81A06-99A8-8CE5-380A-A7B84CD86975</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D50B6BBE-AA96-08A7-4546-890B84228175" name="Package_PK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>805D0BDB-8C10-7FD7-8D46-00BE43CF5D1D</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CF289F3-3917-C9FA-E69C-2C19FEB78E88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

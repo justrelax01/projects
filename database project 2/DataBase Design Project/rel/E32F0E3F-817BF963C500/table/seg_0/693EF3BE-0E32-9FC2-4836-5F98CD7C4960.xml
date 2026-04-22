@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="693EF3BE-0E32-9FC2-4836-5F98CD7C4960" name="Passenger">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>E7971994-50F9-CE6F-773D-084ACEC154F0</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PassengerID" id="09A7DF4C-BE7B-9F9B-0410-D19E9A224973">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>7818F168-290B-661D-3222-DDCAD0178474</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FirstName" id="9DCDE5C3-1C26-9F71-39F4-20A57342EDCB">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>FD1807A3-72BA-4758-C7B9-D78BB4877426</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LastName" id="D31F9FBD-EDFB-E2C7-3797-87B1B495C1B2">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>ADD389DD-6703-FF46-E061-B87A899710A5</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="FB191015-FCD1-BBBE-D1E0-9EDB09C294C2">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>382128F7-4D16-E05E-4D1F-931CECF933C7</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PhoneNumberP" id="00C7FF1F-AD10-550D-3762-8C745C02228F">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>DFA11011-02A6-2C63-F68A-C6431864291B</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Reservation_ReservationNumber" id="C1ED871E-D3C3-012C-A101-C101EF528958">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>B9BA5356-715A-3D8F-FD2E-9672169BE11F</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0960516D-D2FF-C18C-12D3-7A799573E71B" referredColumn="FE0F4FB3-6422-A5C4-0773-4DADF6D0BE2F"/>
+</associations>
+</Column>
+<Column name="Reservation_Hotel_HotelID" id="22E13897-9EBD-6BD1-064B-5511620D3A6B">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>E4459128-C766-7634-A0C5-B48F8F89A412</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0960516D-D2FF-C18C-12D3-7A799573E71B" referredColumn="57400511-CD33-F5F1-C951-3C62A7FD69E3"/>
+</associations>
+</Column>
+<Column name="Reservation_Package_PackageID" id="D0437FE0-55B8-B1A5-AC7B-02A902A491FB">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>797B4C82-6090-BAB6-CFDF-3CB240B00B5F</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0960516D-D2FF-C18C-12D3-7A799573E71B" referredColumn="E9127F84-4588-58BF-67F4-0DD348F0E8C3"/>
+</associations>
+</Column>
+<Column name="Reservation_Staff_StaffID" id="10654BCB-E5FB-8294-B455-BA80DB6452A7">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>045835D0-0E00-B7C5-B267-E3CC917EFACD</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0960516D-D2FF-C18C-12D3-7A799573E71B" referredColumn="283F3C6C-4DE6-5931-CB3C-DA4B7FABD5E4"/>
+</associations>
+</Column>
+<Column name="Reservation_Flight_FlightID" id="E5775FD1-D62D-35F6-F450-53EB30A4CC38">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>AE49650E-E665-7E62-64B3-A25AA46ECD34</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0960516D-D2FF-C18C-12D3-7A799573E71B" referredColumn="E316C061-4D3D-330C-E985-A60EE89250A5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67C64746-FAF1-91BE-9B9A-BA4CB73AAE3A" name="Passenger_PK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>C7C4F5A5-2321-4EE3-B33D-537606CCE32B</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09A7DF4C-BE7B-9F9B-0410-D19E9A224973"/>
+<colUsage columnID="C1ED871E-D3C3-012C-A101-C101EF528958"/>
+<colUsage columnID="22E13897-9EBD-6BD1-064B-5511620D3A6B"/>
+<colUsage columnID="D0437FE0-55B8-B1A5-AC7B-02A902A491FB"/>
+<colUsage columnID="10654BCB-E5FB-8294-B455-BA80DB6452A7"/>
+<colUsage columnID="E5775FD1-D62D-35F6-F450-53EB30A4CC38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEF81178-31A1-6832-34D2-3CEBA689AC4C" name="Passenger_Reservation_FK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>8D08299A-B994-C875-F0CC-F90F081E7CF5</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1ED871E-D3C3-012C-A101-C101EF528958"/>
+<colUsage columnID="22E13897-9EBD-6BD1-064B-5511620D3A6B"/>
+<colUsage columnID="D0437FE0-55B8-B1A5-AC7B-02A902A491FB"/>
+<colUsage columnID="10654BCB-E5FB-8294-B455-BA80DB6452A7"/>
+<colUsage columnID="E5775FD1-D62D-35F6-F450-53EB30A4CC38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

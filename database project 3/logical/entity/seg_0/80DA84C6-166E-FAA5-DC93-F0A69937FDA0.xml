@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="80DA84C6-166E-FAA5-DC93-F0A69937FDA0" name="job_title">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:37:33 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="job_id" id="1505C324-4E74-7029-B443-7CA6D15E8839">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:37:51 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="72EAF896-2D55-C8F2-95CF-D9EC6A6CFFB3">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:38:09 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="A0C2ED4C-2F70-A23E-7D78-6ADBC88B4645">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:38:37 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="58A3A02D-F3A9-2AA6-1764-F15F9466572B" name="job_title PK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:38:07 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1505C324-4E74-7029-B443-7CA6D15E8839</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

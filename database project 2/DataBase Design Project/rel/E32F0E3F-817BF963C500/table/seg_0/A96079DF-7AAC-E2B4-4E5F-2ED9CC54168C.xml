@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A96079DF-7AAC-E2B4-4E5F-2ED9CC54168C" name="Flight">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>9A2AA94B-AA9D-5054-6449-0E12BC6468B8</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FlightID" id="21058171-F77D-A687-8865-42E8133F00B7">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>72C92FA7-555D-31EF-22F9-A6C54CA769FE</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ArrivalDate" id="8BA20001-4D64-696B-F7FA-A6FA606C49DC">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>AA3BF044-5D75-AB87-3973-47D234BD51E8</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ArrivalAirport" id="46F1C39A-5343-01F7-28E6-86016AA2599A">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>AAEB50E9-913D-BE27-38A5-FD087EEC498A</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DepartureAirport" id="C1113A2D-B582-8A3A-0258-09B71592D375">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>1ACE3101-E6EC-14EE-E49B-D2FC7003A433</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>225</dataTypeSize>
+<ownDataTypeParameters>225,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DepatureDate" id="F1129E1B-2673-0C08-6104-01ADBF8FC072">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>A5E4927E-AF54-BDC3-DE4F-97A88969175D</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FlightNumber" id="C5200CCB-F054-A084-9D2A-1BE08FAA3460">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>F6D66EE3-E005-F214-FD65-107E6C2E2E97</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78E69D4E-7164-8A56-4D85-070E005B2CC4" name="Flight_PK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>587153A5-DE24-02EE-E340-704F3AB6B953</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21058171-F77D-A687-8865-42E8133F00B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

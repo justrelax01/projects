@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5BB04CD8-143D-E814-F41D-A2FE4D602AB3" name="CarRental">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:24:27 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CarID" id="11549226-C78C-1A61-FD5B-F23CC63C5A73">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:24:36 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CarType" id="FFC3C7BE-B3D4-B767-AA3C-C2C83D29EF37">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:24:49 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Price" id="6F07584E-C5D3-C06C-AE60-9D5DADE3431F">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:27:06 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Itenerary" id="CFAB2D86-1D96-730F-E257-A49F1962BCAB">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:27:34 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BB75CDB0-EF8B-2F01-6AC8-DD0272DEF599" name="CarRental PK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:24:48 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>11549226-C78C-1A61-FD5B-F23CC63C5A73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

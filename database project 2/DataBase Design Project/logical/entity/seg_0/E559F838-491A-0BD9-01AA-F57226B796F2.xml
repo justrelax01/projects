@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E559F838-491A-0BD9-01AA-F57226B796F2" name="Branch">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:36:59 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BranchID" id="A9AD46AE-9DBF-2112-0E20-F5F3CE7E1EBA">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:37:10 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StaffID" id="155349F4-BF4B-A246-C590-65AE654594AA">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:37:24 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="addressBranch" id="FE98B3E3-9609-5B25-D13D-DD8F70076274">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:37:40 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EmailBranch" id="06988C32-D5DD-8AD5-E737-9FB37F7C60F2">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:38:06 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PhoneNumberB" id="E7F9C0F6-4277-5020-DAA3-D7EAE6C84BCD">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:38:37 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StaffID1" id="C78D1065-CB65-E9F3-BDCD-26772B65FB0C">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-10 14:14:16 UTC</createdTime>
+<generatorID>EF517949-3263-03C1-5092-C1BA19191861</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<referedAttribute>FEE284A5-B254-076A-59E2-48DC093B2F1D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FDF05A1D-0F79-7A7B-E9E9-11B2E5D48D4F" name="Branch PK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:37:21 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A9AD46AE-9DBF-2112-0E20-F5F3CE7E1EBA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

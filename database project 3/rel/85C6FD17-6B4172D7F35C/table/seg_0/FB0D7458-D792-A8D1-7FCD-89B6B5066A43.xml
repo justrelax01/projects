@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB0D7458-D792-A8D1-7FCD-89B6B5066A43" name="job_title">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>80DA84C6-166E-FAA5-DC93-F0A69937FDA0</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="job_id" id="A19FEFCC-25CD-D9F3-C536-0FA245C293E1">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>1505C324-4E74-7029-B443-7CA6D15E8839</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="07D031D8-7F67-91B4-71D5-6E81E9FF4DB0">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>72EAF896-2D55-C8F2-95CF-D9EC6A6CFFB3</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="74CDDCB0-4F8E-6B34-94B4-733FEC09D74C">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>A0C2ED4C-2F70-A23E-7D78-6ADBC88B4645</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4EA98865-4042-62CB-89FE-037F8E786BD5" name="job_title_PK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>58A3A02D-F3A9-2AA6-1764-F15F9466572B</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A19FEFCC-25CD-D9F3-C536-0FA245C293E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

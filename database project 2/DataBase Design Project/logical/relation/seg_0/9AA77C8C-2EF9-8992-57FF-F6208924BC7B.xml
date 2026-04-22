@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Booksv1" directorySegmentName="seg_0" id="9AA77C8C-2EF9-8992-57FF-F6208924BC7B">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:49:04 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<sourcePk>587153A5-DE24-02EE-E340-704F3AB6B953</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9A2AA94B-AA9D-5054-6449-0E12BC6468B8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>428B22D0-963C-4248-93A8-B6BA9EF214ED</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

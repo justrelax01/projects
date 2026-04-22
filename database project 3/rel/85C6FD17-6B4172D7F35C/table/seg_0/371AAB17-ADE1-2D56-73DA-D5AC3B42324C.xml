@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="371AAB17-ADE1-2D56-73DA-D5AC3B42324C" name="dependent">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>9DEBDCF9-99FA-831A-399D-4A7FD14C4790</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="name" id="2295DEFD-4FD6-BEC0-9132-14AE71F0DC47">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>5E14BC36-88A2-2E2E-59AC-9B672654DC2D</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sex" id="F2BBDD76-F5F8-5A26-6F21-F825DB3E0BCC">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>AABBCDD7-AC77-EE24-D722-D93FBF96AF86</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="relation_ship" id="11B73947-FADB-4957-9A1A-BB30BA624D40">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>718716C4-6F15-2BE6-218C-4AEE5E0B4FB3</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birth_date" id="0818E6B2-184D-8934-F50D-10FA2C6AFB63">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>0D6BF9C6-C70E-4C0C-B6B5-348088A0FFA4</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_e_id" id="1BD5255F-C473-D13E-7265-33F80FFD8507">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>3D4202F4-C636-9082-83C5-40328A16081E</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5CD2A615-3B6B-4497-4E7A-3D2378F39FF8" referredColumn="3A3FF340-8D59-133D-B002-D490D4C5DDCA"/>
+</associations>
+</Column>
+<Column name="employee_dept_id" id="B57A9C4F-D37C-C33E-9251-EFDFE3F152F2">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>D849CD14-B4D7-8875-02E3-D822196008D4</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5CD2A615-3B6B-4497-4E7A-3D2378F39FF8" referredColumn="0D48A154-632B-F930-BCF4-07CDBA4F153F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7419AE1-03B2-0BEE-D480-7292BA1E4558" name="dependent_PK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>03090B60-4F08-E6EB-6E8C-A75CD7A62B85</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2295DEFD-4FD6-BEC0-9132-14AE71F0DC47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21CE78A1-5C01-994C-2A9C-D84200DE9AE4" name="dependent_employee_FK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>8C341817-9677-78E3-E3B9-A9E3F79943F8</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BD5255F-C473-D13E-7265-33F80FFD8507"/>
+<colUsage columnID="B57A9C4F-D37C-C33E-9251-EFDFE3F152F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9DEBDCF9-99FA-831A-399D-4A7FD14C4790" name="dependent">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:44:02 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name" id="5E14BC36-88A2-2E2E-59AC-9B672654DC2D">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:44:27 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sex" id="AABBCDD7-AC77-EE24-D722-D93FBF96AF86">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:44:48 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="relation_ship" id="718716C4-6F15-2BE6-218C-4AEE5E0B4FB3">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:45:11 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="birth_date" id="0D6BF9C6-C70E-4C0C-B6B5-348088A0FFA4">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:46:25 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="e_id" id="3D4202F4-C636-9082-83C5-40328A16081E">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 10:42:12 UTC</createdTime>
+<generatorID>8C341817-9677-78E3-E3B9-A9E3F79943F8</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<referedAttribute>463A4BAA-182C-82C2-CF44-16F80301C033</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dept_id" id="D849CD14-B4D7-8875-02E3-D822196008D4">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 10:42:12 UTC</createdTime>
+<generatorID>8C341817-9677-78E3-E3B9-A9E3F79943F8</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<referedAttribute>7FD5F616-F26D-EA7C-718E-3A40689D9356</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="03090B60-4F08-E6EB-6E8C-A75CD7A62B85" name="dependent PK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-23 09:45:09 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<engineerTo>
+<item key="85C6FD17-C40E-1E35-1FB7-6B4172D7F35C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5E14BC36-88A2-2E2E-59AC-9B672654DC2D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

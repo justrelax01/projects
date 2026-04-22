@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="428B22D0-963C-4248-93A8-B6BA9EF214ED" name="Reservation">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 20:47:35 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ReservationNumber" id="A029CCD4-E159-97C9-DE20-FF9D171BEBC9">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 20:47:48 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PassengerID" id="36D2DA88-77F0-DC23-1F65-1725F97F9726">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 20:48:11 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BookingDate" id="8F10F734-0B12-DF07-B856-68E79084A805">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 20:52:53 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HotelID" id="411DD0E1-9918-0B14-4C5F-F24C7EC7DDC3">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 20:53:09 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FlightID" id="94816E5E-3629-DC90-3135-D0042F2B7E4B">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 20:53:43 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PackageID" id="C4975E56-6F86-9FC9-5F08-CD1445E67259">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 20:54:27 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CarID" id="12C5B9A7-E421-4777-8C6E-427D0171E05A">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 20:55:22 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HotelID1" id="6207539B-E538-A0C9-4CEB-021D82EDDE88">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:17:31 UTC</createdTime>
+<generatorID>0E45016C-1F1B-9B28-FC60-3C80004162BF</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<referedAttribute>586B1394-D482-4598-51B9-E4D1786DC13E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CarID1" id="4E61AC1F-D0AF-4A34-0E18-6296B0622A1F">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:28:08 UTC</createdTime>
+<generatorID>257E4453-E6E1-8A24-6BCC-CBC936EC1430</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<referedAttribute>11549226-C78C-1A61-FD5B-F23CC63C5A73</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PackageID1" id="A588EC27-DBEB-343D-C83B-62562E70BB12">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:31:32 UTC</createdTime>
+<generatorID>3BF4B0B3-7602-D103-F3ED-D3C98D258F04</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<referedAttribute>B3092527-397C-91E1-7218-26BB39C32FC0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StaffID" id="95D5D5BC-FB85-C194-8A8B-8259FEA2C46F">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:34:50 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StaffID1" id="5112389F-14C4-A53E-61EA-36B069C49F76">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:35:36 UTC</createdTime>
+<generatorID>346AA441-27CE-0F5C-3880-D1CC76866207</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<referedAttribute>FEE284A5-B254-076A-59E2-48DC093B2F1D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FlightID1" id="CA67B1ED-3648-4CCA-96A3-DB1B80EFD505">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:49:04 UTC</createdTime>
+<generatorID>9AA77C8C-2EF9-8992-57FF-F6208924BC7B</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<referedAttribute>72C92FA7-555D-31EF-22F9-A6C54CA769FE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2B9FDE06-0E5D-CD75-883D-DAB0B1F9BC4D" name="Reservation PK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 20:48:05 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<engineerTo>
+<item key="E32F0E3F-8FEE-7230-A9E4-817BF963C500" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A029CCD4-E159-97C9-DE20-FF9D171BEBC9</attributeRef>
+<attributeRef>6207539B-E538-A0C9-4CEB-021D82EDDE88</attributeRef>
+<attributeRef>A588EC27-DBEB-343D-C83B-62562E70BB12</attributeRef>
+<attributeRef>5112389F-14C4-A53E-61EA-36B069C49F76</attributeRef>
+<attributeRef>CA67B1ED-3648-4CCA-96A3-DB1B80EFD505</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

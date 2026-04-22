@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12A9794A-AB56-EBA2-61B6-6EFB7700F4A1" name="Branch">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>E559F838-491A-0BD9-01AA-F57226B796F2</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BranchID" id="5A7324B0-1CE5-CC33-ADC3-1F3C714582FD">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>A9AD46AE-9DBF-2112-0E20-F5F3CE7E1EBA</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StaffID" id="0669AC1E-1851-1C97-5DE1-827093500335">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>155349F4-BF4B-A246-C590-65AE654594AA</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addressBranch" id="D05FAE6B-EFF4-ECB8-2A2D-89F80638DAD4">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>FE98B3E3-9609-5B25-D13D-DD8F70076274</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EmailBranch" id="C1443C6A-D886-84E3-8D22-9214D7EDDBFA">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>06988C32-D5DD-8AD5-E737-9FB37F7C60F2</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PhoneNumberB" id="5C717F87-A85A-C372-74FB-6C0DFE8B858D">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>E7F9C0F6-4277-5020-DAA3-D7EAE6C84BCD</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Staff_StaffID" id="18B74487-3CFD-116D-1DD3-0DB51DC9E2E3">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-10 14:14:30 UTC</createdTime>
+<generatorID>C78D1065-CB65-E9F3-BDCD-26772B65FB0C</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01568611-F69C-C5B0-8C82-5A526914C829" referredColumn="1881BEF5-82A2-7B08-3BA7-72F1EE20BEBC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B436579-F834-762E-BD40-B0EBBF57EDBC" name="Branch_PK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>FDF05A1D-0F79-7A7B-E9E9-11B2E5D48D4F</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A7324B0-1CE5-CC33-ADC3-1F3C714582FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="991EFD7B-65BB-BE6F-8578-2C2BBEF07CB5" name="Branch__IDX">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-10 14:14:30 UTC</createdTime>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EF517949-3263-03C1-5092-C1BA19191861</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="18B74487-3CFD-116D-1DD3-0DB51DC9E2E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEA897D3-C7C3-59AC-42B3-035E47EBE406" name="Branch_Staff_FK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-10 14:14:30 UTC</createdTime>
+<generatorID>EF517949-3263-03C1-5092-C1BA19191861</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18B74487-3CFD-116D-1DD3-0DB51DC9E2E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

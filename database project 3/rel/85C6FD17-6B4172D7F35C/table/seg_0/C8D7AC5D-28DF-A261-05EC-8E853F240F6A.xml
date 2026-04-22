@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8D7AC5D-28DF-A261-05EC-8E853F240F6A" name="can_be">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_cust_id" id="DC9851B3-4BD3-D9C5-2196-0DA6A3184BB3">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47771A29-7750-DD25-502E-5082058E76C7" referredColumn="ED24381D-E537-25C7-2F60-9E3A762E667F"/>
+</associations>
+</Column>
+<Column name="employee_e_id" id="49D28F17-D0B1-60F1-CFC1-DECB61643462">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F6AC4A0-242F-0205-5355-B3F3F8267B77" referredColumn="3A3FF340-8D59-133D-B002-D490D4C5DDCA"/>
+</associations>
+</Column>
+<Column name="employee_dept_id" id="3D56BFD4-808A-BA44-4D14-6011475CB9E0">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F6AC4A0-242F-0205-5355-B3F3F8267B77" referredColumn="0D48A154-632B-F930-BCF4-07CDBA4F153F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6E3EC4B-0AD4-C49D-789D-1142443A071F" name="can_be_PK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC9851B3-4BD3-D9C5-2196-0DA6A3184BB3"/>
+<colUsage columnID="49D28F17-D0B1-60F1-CFC1-DECB61643462"/>
+<colUsage columnID="3D56BFD4-808A-BA44-4D14-6011475CB9E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0BB45D7-CB36-54C0-B71A-3EEB7FAE1820" name="can_be_customer_FK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>A5BF0386-596D-E347-2BEC-87A6DB465092</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC9851B3-4BD3-D9C5-2196-0DA6A3184BB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64CB4871-02BD-C989-9999-EFC44F595384" name="can_be_employee_FK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>A5BF0386-596D-E347-2BEC-87A6DB465092</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49D28F17-D0B1-60F1-CFC1-DECB61643462"/>
+<colUsage columnID="3D56BFD4-808A-BA44-4D14-6011475CB9E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,66 @@
+1- Search for the maximum salary and the minimum salary among all employees
+2- Search for the employee last names, department name ,and department number , while department number = 555
+3- Finding the departments with more than 3 employees and their average salary
+4- Display the number of Orders of each Customer (who has placed at least one Order) 
+5- Show Customers who are not employees at the same time.
+6- give me a department that doesn't have any employees
+7- Write a query to find the names of employees who have the same job title and salary as their manager.
+8- Selecting all employees who have not been assigned to any project and have the lowest salary.
+9- View the id and the names of all customers and employees, and the department id ,also department id= 555 and cust age>24.
+10-Search for the last name and salary of employees who earn more than '', the number and salary ''. 
+11-show employees whose first name starts with "s",
+
+
+
+answers:
+
+1- Select Max(salary) AS max_salary,min(salary) As min_salary
+ from employee;
+
+2-SELECT e_lname, dept_name, dept_id
+FROM employee, department
+WHERE e.dept_id = d.dept_id AND dept_id = 555;
+
+3-SELECT dept_id, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY dept_id
+HAVING COUNT(*) > 5;
+
+4-select count(*)nbofprod,cust_id
+  from customer
+  groupby cust_id;
+
+5-SELECT *
+FROM customer
+WHERE cust_id NOT IN (SELECT e_id FROM employee);
+
+6-SELECT dept_name, dept_id
+FROM department
+WHERE dept_id NOT IN (SELECT dept_id FROM employee);
+
+7-SELECT e1.lname AS employee_name
+FROM employees e1
+WHERE (e1.job_title, e1.salary) IN 
+      (SELECT e2.job_title, e2.salary 
+       FROM employees e2 
+       WHERE e2.employee_id = e1.manager_id);
+8-SELECT *
+FROM employee e
+WHERE e_id NOT IN (SELECT DISTINCT e_id FROM works_on)
+AND salary = (SELECT MIN(salary) FROM employee );
+
+9-SELECT e_id, e_fname, dept_id
+FROM employee
+WHERE dept_id = 666
+
+UNION
+
+SELECT cust_id, cust_name
+FROM customer
+WHERE age > 24;
+
+10-SELECT e1.e_fname,e1.salary,e2.e_fname,e2.salary
+from employee e1,employee e2
+where e1.salary>e2.salary and e2.e_fname="sami";
+
+11-SELECT * FROM employees WHERE first_name LIKE 's%';

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="824DD2EA-4F27-8ACD-70E0-C023F176EF11" name="sells">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="department_dept_id" id="0EDD71B9-B56F-98A0-ABD8-C89EC9111F28">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CDA35AFF-1292-392A-09E3-A8C581F45C2E" referredColumn="50B9A729-83DF-5E18-4B9E-8FB5C6042A09"/>
+</associations>
+</Column>
+<Column name="products_pr_id" id="F02ADD06-2D27-2B7D-2849-0FAC1EEBC98A">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6E7B235-3E4A-FD82-77B8-9069F5EA642C" referredColumn="B50615F2-9F78-8F07-9883-9005FC0FE64F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="75214D85-9A7C-80A8-AE4E-191CE8D4D0DF" name="sells_PK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EDD71B9-B56F-98A0-ABD8-C89EC9111F28"/>
+<colUsage columnID="F02ADD06-2D27-2B7D-2849-0FAC1EEBC98A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF30BF0D-323C-4147-610D-91E9FEC72372" name="sells_department_FK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>7A77B292-94FA-2BEA-1263-A76674DF3DDA</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EDD71B9-B56F-98A0-ABD8-C89EC9111F28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8500B9B-1628-B8DC-1930-8DAB1548F59A" name="sells_products_FK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>7A77B292-94FA-2BEA-1263-A76674DF3DDA</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F02ADD06-2D27-2B7D-2849-0FAC1EEBC98A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

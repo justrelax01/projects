@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A912B290-4255-250F-7878-1540D8E23650" name="CarRental">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>5BB04CD8-143D-E814-F41D-A2FE4D602AB3</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CarID" id="0E498F4E-8562-0680-E879-6C33DCFEBD31">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>11549226-C78C-1A61-FD5B-F23CC63C5A73</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CarType" id="0612F41B-DD62-CC03-B1F9-73DEBA43315C">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:03 UTC</createdTime>
+<generatorID>FFC3C7BE-B3D4-B767-AA3C-C2C83D29EF37</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Price" id="6CBAC21E-A014-18C3-B1BD-C5CF238DE56B">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>6F07584E-C5D3-C06C-AE60-9D5DADE3431F</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Itenerary" id="D5A7BD01-5BB8-6AA2-12AB-C1FA258E90B2">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>CFAB2D86-1D96-730F-E257-A49F1962BCAB</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1B365704-3A0C-F9E8-E580-34A520C6D765" name="CarRental_PK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>BB75CDB0-EF8B-2F01-6AC8-DD0272DEF599</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E498F4E-8562-0680-E879-6C33DCFEBD31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BAC12E94-1727-9FFD-9B10-9AAB9C01FFBF" containerWithKeyObject="61FF46F9-2A28-C84E-29E4-C911C6B1AAE1" localFKIndex="5DED56C8-5F81-1389-CCCE-2CB421CCF949" name="Reservation_Package_FK">
+<createdBy>Alish</createdBy>
+<createdTime>2023-12-09 21:51:04 UTC</createdTime>
+<generatorID>3BF4B0B3-7602-D103-F3ED-D3C98D258F04</generatorID>
+<ownerDesignName>DataBase Design Project</ownerDesignName>
+<referredTableLongName>Package</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EA249A73-04B2-6AC8-1D9B-FA9D7260832E</referredTableID>
+<keyObject>D50B6BBE-AA96-08A7-4546-890B84228175</keyObject>
+<referredKeyID>D50B6BBE-AA96-08A7-4546-890B84228175</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PackageID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

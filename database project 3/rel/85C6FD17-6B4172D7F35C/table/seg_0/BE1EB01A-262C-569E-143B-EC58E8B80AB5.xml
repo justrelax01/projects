@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE1EB01A-262C-569E-143B-EC58E8B80AB5" name="buys">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_cust_id" id="30EEA1DB-FD54-FFC5-B13E-FD29C0C4E8E4">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1D8D717-FFFB-05AE-40DC-94454F1DD97B" referredColumn="ED24381D-E537-25C7-2F60-9E3A762E667F"/>
+</associations>
+</Column>
+<Column name="products_pr_id" id="4D09B54A-CC57-79A5-7441-D4F9DE765F31">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58423130-5873-8442-A3EC-7758BE0FB64E" referredColumn="B50615F2-9F78-8F07-9883-9005FC0FE64F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29015360-10FB-1CB5-0380-31082AEC7EAB" name="buys_PK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30EEA1DB-FD54-FFC5-B13E-FD29C0C4E8E4"/>
+<colUsage columnID="4D09B54A-CC57-79A5-7441-D4F9DE765F31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31000C6E-BCFC-DFC5-A9A9-E867BB39A4E0" name="buys_customer_FK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>606CB21B-1E77-7C16-38C4-9A8B55A4D971</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30EEA1DB-FD54-FFC5-B13E-FD29C0C4E8E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2959362E-B905-DD79-D096-E07DA62DC1C6" name="buys_products_FK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>606CB21B-1E77-7C16-38C4-9A8B55A4D971</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D09B54A-CC57-79A5-7441-D4F9DE765F31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

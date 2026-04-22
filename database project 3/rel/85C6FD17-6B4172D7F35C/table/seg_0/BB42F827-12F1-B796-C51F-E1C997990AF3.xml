@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB42F827-12F1-B796-C51F-E1C997990AF3" name="managed_by">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="department_dept_id" id="A887BC52-44DB-0898-5264-105E1BBC5EB7">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="852DCF78-15DA-2F66-733B-A99AC05CE404" referredColumn="50B9A729-83DF-5E18-4B9E-8FB5C6042A09"/>
+</associations>
+</Column>
+<Column name="manager_m_id" id="EF724EB7-91B8-AC1B-DD34-08CA09151603">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55EA857D-C0D5-E436-0B35-BE6518335F6B" referredColumn="0C2A758B-730E-05FF-49BF-30A904496347"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E850D4E-B895-E9C1-FF77-497C2FFD3EA5" name="managed_by_PK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A887BC52-44DB-0898-5264-105E1BBC5EB7"/>
+<colUsage columnID="EF724EB7-91B8-AC1B-DD34-08CA09151603"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="222C3936-A992-3F26-335E-68EE025C72E9" name="managed_by_department_FK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>FF12D993-0272-0E43-95EF-25EDFF1FD85E</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A887BC52-44DB-0898-5264-105E1BBC5EB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DD95BCF-17B7-1092-ED8D-2F99B516CE71" name="managed_by_manager_FK">
+<createdBy>hasan</createdBy>
+<createdTime>2024-04-28 15:54:47 UTC</createdTime>
+<generatorID>FF12D993-0272-0E43-95EF-25EDFF1FD85E</generatorID>
+<ownerDesignName>projectdatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF724EB7-91B8-AC1B-DD34-08CA09151603"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
