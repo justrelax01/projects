@@ -1,629 +1,597 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="veiwport" content="width-device-width, initial-scale=1.0">
-	<title>FaQ & Feedback</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ & Feedback</title>
+  <link rel="stylesheet" href="external.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-<style>
-	/*navbar*/
-
-	.nav-bar {
-    height: 70px;
-    margin-top:30px;
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-   
-  .brand {
-    position: absolute;
-    padding-left: 50px;
-    float: left;
-    line-height: 70px;
-    text-transform: uppercase;
-    font-size: 1.6em;
-  }
-
-  .brand a img {
-    max-height: 70px;
-  }
+  <style>
   
-  .brand a,
-  .brand a:visited {
-    color: white;
-    text-decoration: none;
-  }
-   
-  .nav-container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-   
-  nav {
-    float: right;
-  }
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
-    float: left;
-    position: relative;
-  }
-  nav ul li a {
-    display: block;
-    padding: 0 20px;
-    line-height: 70px;
-    color: white;
-    text-decoration: none;
-  }
-  
-   #dropdwnBk{
-    background:linear-gradient();
-  }
-
-  nav ul li a:hover {
-    color: white;
-    border-bottom: 1px solid white;
-  }
-  
-  nav ul li ul li {
-    min-width: 190px;
-  }
-  nav ul li ul li a {
-    padding: 15px;
-    line-height: 20px;
-  }
-   
-  .nav-dropdown {
-    position:fixed;
-    display: none;
-    z-index: 1;
-    box-shadow: 0 3px 12px rgba(253, 4, 4, 0.15);
-  }
-   
-  .nav-mobile {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 70px;
-    width: 70px;
-  }
-
-  @media only screen and (max-width: 789px) {
-    .nav-mobile {
-      display: block;
+    :root {
+      --blue:       #2563eb;
+      --blue-light: #dbeafe;
+      --blue-dark:  #1e40af;
+      --orange:     #f97316;
+      --bg:         #f0f4ff;
+      --white:      #ffffff;
+      --text:       #111827;
+      --muted:      #6b7280;
+      --border:     #e5e7eb;
+      --card-bg:    #ffffff;
+      --radius:     16px;
+      --shadow:     0 4px 24px rgba(37,99,235,0.08);
     }
-   
-    nav {
-      width: 100%;
-      padding: 70px 0 15px;
+
+    * {
+       margin: 0; 
+       padding: 0; 
+       box-sizing: border-box; 
+      }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
     }
+
+    .page-hero {
+      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 60%, #60a5fa 100%);
+      padding: 80px 24px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero::before,
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+    .page-hero::before { width: 400px; height: 400px; top: -150px; left: -100px; }
+    .page-hero::after  { width: 300px; height: 300px; bottom: -120px; right: -60px; }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .hero-subtitle {
+      font-size: 16px;
+      color: rgba(255,255,255,0.75);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .page-content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+    }
+
     
-    nav ul {
+    .section-heading {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .section-heading-icon {
+      width: 40px; height: 40px;
+      background: var(--blue);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .section-heading-icon svg { width: 20px; height: 20px; fill: white; }
+
+    .section-heading h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .section-heading p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .faq-item:hover {
+      border-color: #bfdbfe;
+      box-shadow: 0 4px 28px rgba(37,99,235,0.12);
+    }
+
+    
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .faq-question-text {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .faq-icon {
+      width: 28px; height: 28px;
+      background: var(--blue-light);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.2s, transform 0.3s;
+    }
+    .faq-icon svg { width: 14px; height: 14px; fill: var(--blue); transition: transform 0.3s; }
+
+    .faq-item.open .faq-icon { background: var(--blue); transform: rotate(45deg); }
+    .faq-item.open .faq-icon svg { fill: white; }
+    .faq-item.open { border-color: var(--blue); }
+
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.3s ease;
+      padding: 0 24px;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+      padding: 0 24px 20px;
+    }
+
+    .faq-answer p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+
+    .feedback-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 36px 40px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-group.full { grid-column: 1 / -1; } 
+
+    .form-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 11px 14px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      width: 100%;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.10);
+      background: #fff;
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 130px;
+      line-height: 1.6;
+    }
+
+   
+    .rating-group {
+      display: flex;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .star {
+      font-size: 28px;
+      color: #d1d5db;
+      cursor: pointer;
+      transition: color 0.15s, transform 0.15s;
+      line-height: 1;
+    }
+    .star:hover,
+    .star.active { color: #f59e0b; transform: scale(1.15); }
+
+    
+    .submit-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 24px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .submit-note {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .feedback-btn {
+      background: var(--blue);
+      color: white;
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 32px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    }
+    .feedback-btn:hover {
+      background: var(--blue-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(37,99,235,0.30);
+    }
+    .feedback-btn svg { width: 16px; height: 16px; fill: white; }
+
+    
+    .success-msg {
       display: none;
+      align-items: center;
+      gap: 10px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #15803d;
+      font-weight: 500;
     }
+    .success-msg svg { width: 18px; height: 18px; fill: #16a34a; flex-shrink: 0; }
+    .success-msg.show { display: flex; }
 
-    nav ul li {
-      float: none;
+    
+    @media (max-width: 600px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .feedback-card { padding: 24px 20px; }
+      .submit-row { flex-direction: column; align-items: stretch; }
+      .feedback-btn { justify-content: center; }
     }
-
-    nav ul li a {
-      padding: 15px;
-      line-height: 20px;
-      padding-left: 25%;
-   
-    }
-
-    nav ul li ul li a {
-      padding-left: 30%;
-    }
-   
-    .nav-dropdown {
-      position: static;
-    }
-
-    .nav-dropdown {
-      position: static;
-    }
-   .brand a img {
-   max-height: 60px;
-   margin-top: 5px;
-   }
-
-
-   }
-
-   @media screen and (min-width: 799px) {
-    .nav-list {
-      display: block;
-    }
-  }
-
-  #nav-toggle {
-    position: absolute;
-    left: 18px;
-    top: 22px;
-    cursor: pointer;
-    padding: 10px 35px 16px 0px;
-  }
- 
-  #nav-toggle span,
-  #nav-toggle span:before,
-  #nav-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 35px;
-    background: #ffffff;
-    position: absolute;
-    display: block;
-    content: '';
-    transition: all 300ms ease-in-out;
-  }
-  #nav-toggle span:before {
-    top: -10px;
-  }
-  #nav-toggle span:after {
-    bottom: -10px;
-  }
-  #nav-toggle.active span {
-    background-color: transparent;
-  }
-  #nav-toggle.active span:before, #nav-toggle.active span:after {
-    top: 0;
-  }
-  #nav-toggle.active span:before {
-    transform: rotate(45deg);
-  }
-  #nav-toggle.active span:after {
-    transform: rotate(-45deg);
-  }
-
-
-        body {
-			font-family: Arial, sans-serif;
-			background-image: url("images/image3.jpg");
-			background-repeat:no-repeat;
-			background-attachment:fixed;
-			background-position:auto;
-			background-size: cover;
-			margin-top:130px;
-			
-			}
-
-		button {
-			background-color: #000080;
-			color: white;
-			padding: 5px 10px; 
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-
-		
-		}
-		button:hover {
-			background-color: #000025;
-		} 
-			
-			</style>
-			
-
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="js.js"></script>
+  </style>
 </head>
 <body>
-	<section class="nav-bar">
-    <div class="nav-container">
-      <div class="brand">
-          <a href="#"><img src=""><img></a>
-        
-      </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span class="material-icons"></span></a></div>
-        <ul class="nav-list selected">
-        <li>
+
+  <button id="scrollTopBtn">
+  
+      <i class="fa-solid fa-arrow-up"></i>
+  
+    </button>
+
+  
+     <button class="back-btn" onclick="history.back()">← Back</button>
+  
+    <section class="nav-bar">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#"><img src="" /><img /></a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span class="material-icons"></span></a>
+          </div>
+          <ul class="nav-list selected">
+            <li>
               <a href="home.html">Home</a>
-          </li>
-          <li>
-            <a href="#ttt">Flights</a>
-          </li>
-          <li>
-            <a href="faq&feedb.html">FaQ & Feedback</a>
-          </li>
-          <li>
+            </li>
+            <li>
+              <a href="Flights.html">Flights</a>
+            </li>
+            <li>
+              <a href="faq&feedb.html">FaQ & Feedback</a>
+            </li>
+            <li>
               <a href="#yyy">About</a>
-          </li>
-          <li>
-            <a href="login.html">Login or Register</a>
-          </li>
+            </li>
+            <li>
+              <a href="login.html">Login or Register</a>
+            </li>
+            <li>
+              <a href="searchflights.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+  <div class="page-hero">
+    <div class="hero-tag">Help Center</div>
+    <h1 class="hero-title">FAQ & Feedback</h1>
+    <p class="hero-subtitle">Find quick answers to common questions, or share your experience with us.</p>
+  </div>
+
+  <div class="page-content">
+
     
-        </ul>
-      </nav>
-    </div>
-  </section> 
-	   
-		  
+    <section>
+      <div class="section-heading">
+        <div class="section-heading-icon">
+          
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+        </div>
+        <div>
+          <h2>Frequently Asked Questions</h2>
+          <p>Click a question to reveal the answer</p>
+        </div>
+      </div>
 
-	<h1 style="text-align:center; color:#c9c9c9; font-size: 40px;">FAQ & Feedback</h1>
-	<ul style="color:#c9c9c9">
-	<li>
-	<h2 style="color:#c9c9c9; font-size:25px;">FAQ</h2>
-	</li>
-	</ul>
-	<ul style="color:#92f4f4">
-		<li>
-			<a style="color:#92f4f4"href="#" class="question">How can i book a flight?</a>
-			<div class="answer">
-				<p style="color:white">You can click on the button "Book a flight" on our home page for more information.</p>
-		</li>
-		<li>
-			<a style="color:#92f4f4" href="#" class="question">Is there a hotel that a passenger can stay after arriving to his destination?</a>
-			<div class="answer">
-				<p style="color:white">Yes! You call us on our number +42 67 89 98 90 for reservation.</p>
-			</div>
-		</li>
-		<li>
-			<a style="color:#92f4f4" href="#" class="question">How many stops is there during a flight?</a>
-			<div class="answer">
-				<p style="color:white">It depends on the duration of your trip, Most likely it can be none or 1 to 2 stops.</p>
-			</div>
-			<li>
-			<a style="color:#92f4f4"href="#" class="question">Which restaurant is the best to go during my trip?</a>
-			<div class="answer">
-				<p style="color:white">You can check our Instagram page which will give you options of many fancy restaurants.</p>
-		</li>
-		<li>
-			<a style="color:#92f4f4"href="#" class="question">Is there an insurance during the trip?</a>
-			<div class="answer">
-				<p style="color:white">Of course! Your safety is our responsibility. Our medical system will be available during the whole trip.</p>
-		</li>
-		<li>
-			<a style="color:#92f4f4"href="#" class="question">Why i keep registering an account but it gives an error each time?</a>
-			<div class="answer">
-				<p style="color:white">Check if you e-mail and password are correct. If your account already exists, Please sign it up.</p>
-		</li>
-		<li>
-			<a style="color:#92f4f4"href="#" class="question">Am i allowed to bring food during my trip?</a>
-			<div class="answer">
-				<p style="color:white">We clearly have no problem with that! But some countries have forbidden this option so this depends on your destination's country's rules.</p>
-		</li>
-		</li>
-		
-	</ul>
-	<ul style="color:#c9c9c9">
-	<li>
-	<h3 style="color:#c9c9c9; font-size: 25px;">Feedback</h3>
-	</li>
-	</ul>
-	<div>
-  <textarea id="name" name="name" placeholder="Give us a review on your trip. And feel free to ask any question which will be answered within 48 hours.." style="background-color:#c9c9c9;margin-left: 23px;width: 400px; height: 200px; "></textarea>
-	<button id="send-btn" type="submit" value="Send">Send</button>
-		
-</div>
+      <div class="faq-list" id="faq-list"></div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div class="section-heading-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        </div>
+        <div>
+          <h2>Share Your Feedback</h2>
+          <p>We read every response — your opinion shapes our service</p>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="form-grid">
+
+          
+          <div class="form-group">
+            <label class="form-label" for="fb-name">Full Name</label>
+            <input class="form-input" id="fb-name" type="text" placeholder="e.g. John Smith" />
+          </div>
+
+         
+          <div class="form-group">
+            <label class="form-label" for="fb-email">Email Address</label>
+            <input class="form-input" id="fb-email" type="email" placeholder="you@example.com" />
+          </div>
+
+          <!-- Topic -->
+          <div class="form-group">
+            <label class="form-label" for="fb-topic">Topic</label>
+            <select class="form-select" id="fb-topic">
+              <option value="" disabled selected>Select a topic</option>
+              <option>Flight Experience</option>
+              <option>Booking Process</option>
+              <option>Customer Support</option>
+              <option>Pricing & Offers</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <!-- Rating -->
+          <div class="form-group">
+            <label class="form-label">Overall Rating</label>
+            <div class="rating-group" id="star-rating">
+              <span class="star" data-val="1">★</span>
+              <span class="star" data-val="2">★</span>
+              <span class="star" data-val="3">★</span>
+              <span class="star" data-val="4">★</span>
+              <span class="star" data-val="5">★</span>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group full">
+            <label class="form-label" for="fb-message">Your Message</label>
+            <textarea class="form-textarea" id="fb-message" placeholder="Tell us about your experience, or ask a question. We'll reply within 48 hours…"></textarea>
+          </div>
+
+        </div>
+
+        <div class="submit-row">
+          <p class="submit-note">🔒 Your information is private and never shared.</p>
+          <button class="feedback-btn" id="submit-btn">
+            Send Feedback
+            <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          </button>
+        </div>
+
+        
+        <div class="success-msg" id="success-msg">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          Thank you! Your feedback has been sent. We'll get back to you within 48 hours.
+        </div>
+      </div>
+    </section>
+
+  </div>
 
 
+  <script>
+    
+    const faqs = [
+      {
+        q: "How can I book a flight?",
+        a: "You can click on the 'Book a Flight' button on our home page. Our booking flow will guide you through selecting dates, passengers, and seats in just a few steps."
+      },
+      {
+        q: "Is there a hotel I can stay at after arriving at my destination?",
+        a: "Yes! We have partner hotels at most destinations. Call us on +42 67 89 98 90 for reservations and we'll arrange everything for you."
+      },
+      {
+        q: "How many stops are there during a flight?",
+        a: "It depends on the duration and route of your trip. Most flights are direct, but longer routes may include 1–2 stops. This is always displayed clearly during booking."
+      },
+      {
+        q: "Which restaurants are recommended during my trip?",
+        a: "Check our Instagram page for curated lists of restaurants at each destination, from street food to fine dining."
+      },
+      {
+        q: "Is there insurance available during the trip?",
+        a: "Absolutely — your safety is our top priority. Our medical and travel insurance system is active throughout the entire duration of your journey."
+      },
+      {
+        q: "Why does my account registration keep showing an error?",
+        a: "Double-check that your email address and password meet the requirements. If an account with your email already exists, please use the Sign In option instead."
+      },
+      {
+        q: "Am I allowed to bring food on board?",
+        a: "We welcome personal snacks on board. However, some destination countries restrict certain food items at customs. Please review your destination's import rules before travelling."
+      }
+    ];
+
+   
+    const faqList = document.getElementById('faq-list');
+    faqList.innerHTML = faqs.map((item, i) => `
+      <div class="faq-item" id="faq-${i}">
+        <button class="faq-question" onclick="toggleFAQ(${i})">
+          <span class="faq-question-text">${item.q}</span>
+          <span class="faq-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>${item.a}</p>
+        </div>
+      </div>
+    `).join('');
+
+    
+    function toggleFAQ(index) {
+      const item = document.getElementById(`faq-${index}`);
+      const isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+
+      if (!isOpen) item.classList.add('open');
+    }
+
+    let selectedRating = 0;
+    const stars = document.querySelectorAll('.star');
+
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        selectedRating = parseInt(star.dataset.val);
+        stars.forEach(s => {
+          s.classList.toggle('active', parseInt(s.dataset.val) <= selectedRating);
+        });
+      });
+
+      
+      star.addEventListener('mouseenter', () => {
+        stars.forEach(s => {
+          s.style.color = parseInt(s.dataset.val) <= parseInt(star.dataset.val) ? '#f59e0b' : '#d1d5db';
+        });
+      });
+
+      star.addEventListener('mouseleave', () => {
+        stars.forEach(s => {
+          s.style.color = parseInt(s.dataset.val) <= selectedRating ? '#f59e0b' : '#d1d5db';
+        });
+      });
+    });
+
+
+    document.getElementById('submit-btn').addEventListener('click', () => {
+      const name    = document.getElementById('fb-name').value.trim();
+      const email   = document.getElementById('fb-email').value.trim();
+      const message = document.getElementById('fb-message').value.trim();
+
+      
+      if (!name || !email || !message) {
+        alert('Please fill in your name, email, and message before sending.');
+        return;
+      }
+
+      
+      document.getElementById('success-msg').classList.add('show');
+
+      
+      document.getElementById('fb-name').value    = '';
+      document.getElementById('fb-email').value   = '';
+      document.getElementById('fb-topic').value   = '';
+      document.getElementById('fb-message').value = '';
+      stars.forEach(s => { s.classList.remove('active'); s.style.color = ''; });
+      selectedRating = 0;
+    });
+  </script>
+
+  
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="veiwport" content="width-device-width, initial-scale=1.0">
-	<title>FaQ & Feedback</title>
-
-<style>
-	/*navbar*/
-
-	.nav-bar {
-    height: 70px;
-    margin-top:30px;
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-   
-  .brand {
-    position: absolute;
-    padding-left: 50px;
-    float: left;
-    line-height: 70px;
-    text-transform: uppercase;
-    font-size: 1.6em;
-  }
-
-  .brand a img {
-    max-height: 70px;
-  }
-  
-  .brand a,
-  .brand a:visited {
-    color: white;
-    text-decoration: none;
-  }
-   
-  .nav-container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-   
-  nav {
-    float: right;
-  }
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
-    float: left;
-    position: relative;
-  }
-  nav ul li a {
-    display: block;
-    padding: 0 20px;
-    line-height: 70px;
-    color: white;
-    text-decoration: none;
-  }
-  
-   #dropdwnBk{
-    background:linear-gradient();
-  }
-
-  nav ul li a:hover {
-    color: white;
-    border-bottom: 1px solid white;
-  }
-  
-  nav ul li ul li {
-    min-width: 190px;
-  }
-  nav ul li ul li a {
-    padding: 15px;
-    line-height: 20px;
-  }
-   
-  .nav-dropdown {
-    position:fixed;
-    display: none;
-    z-index: 1;
-    box-shadow: 0 3px 12px rgba(253, 4, 4, 0.15);
-  }
-   
-  .nav-mobile {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 70px;
-    width: 70px;
-  }
-
-  @media only screen and (max-width: 789px) {
-    .nav-mobile {
-      display: block;
-    }
-   
-    nav {
-      width: 100%;
-      padding: 70px 0 15px;
-    }
-    
-    nav ul {
-      display: none;
-    }
-
-    nav ul li {
-      float: none;
-    }
-
-    nav ul li a {
-      padding: 15px;
-      line-height: 20px;
-      padding-left: 25%;
-   
-    }
-
-    nav ul li ul li a {
-      padding-left: 30%;
-    }
-   
-    .nav-dropdown {
-      position: static;
-    }
-
-    .nav-dropdown {
-      position: static;
-    }
-   .brand a img {
-   max-height: 60px;
-   margin-top: 5px;
-   }
-
-
-   }
-
-   @media screen and (min-width: 799px) {
-    .nav-list {
-      display: block;
-    }
-  }
-
-  #nav-toggle {
-    position: absolute;
-    left: 18px;
-    top: 22px;
-    cursor: pointer;
-    padding: 10px 35px 16px 0px;
-  }
- 
-  #nav-toggle span,
-  #nav-toggle span:before,
-  #nav-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 35px;
-    background: #ffffff;
-    position: absolute;
-    display: block;
-    content: '';
-    transition: all 300ms ease-in-out;
-  }
-  #nav-toggle span:before {
-    top: -10px;
-  }
-  #nav-toggle span:after {
-    bottom: -10px;
-  }
-  #nav-toggle.active span {
-    background-color: transparent;
-  }
-  #nav-toggle.active span:before, #nav-toggle.active span:after {
-    top: 0;
-  }
-  #nav-toggle.active span:before {
-    transform: rotate(45deg);
-  }
-  #nav-toggle.active span:after {
-    transform: rotate(-45deg);
-  }
-
-
-        body {
-			font-family: Arial, sans-serif;
-			background-image: url("images/image3.jpg");
-			background-repeat:no-repeat;
-			background-attachment:fixed;
-			background-position:auto;
-			background-size: cover;
-			margin-top:130px;
-			
-			}
-
-		button {
-			background-color: #000080;
-			color: white;
-			padding: 5px 10px; 
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-
-		
-		}
-		button:hover {
-			background-color: #000025;
-		} 
-			
-			</style>
-			
-
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="js.js"></script>
-</head>
-<body>
-	<section class="nav-bar">
-    <div class="nav-container">
-      <div class="brand">
-          <a href="#"><img src=""><img></a>
-        
-      </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span class="material-icons"></span></a></div>
-        <ul class="nav-list selected">
-        <li>
-              <a href="home.html">Home</a>
-          </li>
-          <li>
-            <a href="#ttt">Flights</a>
-          </li>
-          <li>
-            <a href="faq&feedb.html">FaQ & Feedback</a>
-          </li>
-          <li>
-              <a href="#yyy">About</a>
-          </li>
-          <li>
-            <a href="login.html">Login or Register</a>
-          </li>
-    
-        </ul>
-      </nav>
-    </div>
-  </section> 
-	   
-		  
-
-	<h1 style="text-align:center; color:#c9c9c9; font-size: 40px;">FAQ & Feedback</h1>
-	<ul style="color:#c9c9c9">
-	<li>
-	<h2 style="color:#c9c9c9; font-size:25px;">FAQ</h2>
-	</li>
-	</ul>
-	<ul style="color:#92f4f4">
-		<li>
-			<a style="color:#92f4f4"href="#" class="question">How can i book a flight?</a>
-			<div class="answer">
-				<p style="color:white">You can click on the button "Book a flight" on our home page for more information.</p>
-		</li>
-		<li>
-			<a style="color:#92f4f4" href="#" class="question">Is there a hotel that a passenger can stay after arriving to his destination?</a>
-			<div class="answer">
-				<p style="color:white">Yes! You call us on our number +42 67 89 98 90 for reservation.</p>
-			</div>
-		</li>
-		<li>
-			<a style="color:#92f4f4" href="#" class="question">How many stops is there during a flight?</a>
-			<div class="answer">
-				<p style="color:white">It depends on the duration of your trip, Most likely it can be none or 1 to 2 stops.</p>
-			</div>
-			<li>
-			<a style="color:#92f4f4"href="#" class="question">Which restaurant is the best to go during my trip?</a>
-			<div class="answer">
-				<p style="color:white">You can check our Instagram page which will give you options of many fancy restaurants.</p>
-		</li>
-		<li>
-			<a style="color:#92f4f4"href="#" class="question">Is there an insurance during the trip?</a>
-			<div class="answer">
-				<p style="color:white">Of course! Your safety is our responsibility. Our medical system will be available during the whole trip.</p>
-		</li>
-		<li>
-			<a style="color:#92f4f4"href="#" class="question">Why i keep registering an account but it gives an error each time?</a>
-			<div class="answer">
-				<p style="color:white">Check if you e-mail and password are correct. If your account already exists, Please sign it up.</p>
-		</li>
-		<li>
-			<a style="color:#92f4f4"href="#" class="question">Am i allowed to bring food during my trip?</a>
-			<div class="answer">
-				<p style="color:white">We clearly have no problem with that! But some countries have forbidden this option so this depends on your destination's country's rules.</p>
-		</li>
-		</li>
-		
-	</ul>
-	<ul style="color:#c9c9c9">
-	<li>
-	<h3 style="color:#c9c9c9; font-size: 25px;">Feedback</h3>
-	</li>
-	</ul>
-	<div>
-  <textarea id="name" name="name" placeholder="Give us a review on your trip. And feel free to ask any question which will be answered within 48 hours.." style="background-color:#c9c9c9;margin-left: 23px;width: 400px; height: 200px; "></textarea>
-	<button id="send-btn" type="submit" value="Send">Send</button>
-		
-</div>
-
-
-</body>
-</html>
->>>>>>> d993208a91bb4af337db207f22e9c79365ccccf2

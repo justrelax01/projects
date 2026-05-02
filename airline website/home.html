@@ -1,20 +1,16 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="veiwport" content="width-device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Airlines</title>
     <link rel="stylesheet" href="external.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
       html,
       body {
@@ -23,11 +19,6 @@
         width: 100%;
         height: 100%;
         scroll-behavior: smooth;
-      }
-      .nav-bar {
-        background-color: black;
-        margin-top: 0;
-        width: 100%;
       }
 
       .class1 {
@@ -82,18 +73,33 @@
     </style>
 
     <script>
+
       var counter = 1;
       setInterval(function () {
         document.getElementById("radio" + counter).checked = true;
         counter++;
-        if (counter > 5) {
+        if (counter > 6) {
           counter = 1;
         }
       }, 5000);
+
+
+
+      
     </script>
   </head>
 
   <body>
+
+    <button id="scrollTopBtn">
+  
+      <i class="fa-solid fa-arrow-up"></i>
+  
+    </button>
+
+
+     <button class="back-btn" onclick="history.back()">← Back</button>
+
     <section class="nav-bar">
       <div class="nav-container">
         <div class="brand">
@@ -101,15 +107,14 @@
         </div>
         <nav>
           <div class="nav-mobile">
-            <a id="nav-toggle" href="#!"
-              ><span class="material-icons"></span></a>
+            <a id="nav-toggle" href="#!"><span class="material-icons"></span></a>
           </div>
           <ul class="nav-list selected">
             <li>
               <a href="home.html">Home</a>
             </li>
             <li>
-              <a href="#ttt">Flights</a>
+              <a href="Flights.html">Flights</a>
             </li>
             <li>
               <a href="faq&feedb.html">FaQ & Feedback</a>
@@ -119,6 +124,9 @@
             </li>
             <li>
               <a href="login.html">Login or Register</a>
+            </li>
+            <li>
+              <a href="searchflights.html"><i class="fa-solid fa-magnifying-glass"></i></a>
             </li>
           </ul>
         </nav>
@@ -141,27 +149,33 @@
 
       <div class="slider">
         <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
-          <input type="radio" name="radio-btn" id="radio5" />
+          <input type="radio" name="radio-btn" id="radio1" >
+          <input type="radio" name="radio-btn" id="radio2" >
+          <input type="radio" name="radio-btn" id="radio3" >
+          <input type="radio" name="radio-btn" id="radio4" >
+          <input type="radio" name="radio-btn" id="radio5" >
+          <input type="radio" name="radio-btn" id="radio6" >
 
           <div class="slide first">
-            <img src="images/paris.jpg" alt="" />
+            <img src="images/paris.jpg" alt="" >
           </div>
 
           <div class="slide">
-            <img src="images/Pisa.jpg" alt="" />
+            <img src="images/Pisa.jpg" alt="" >
           </div>
           <div class="slide">
-            <img src="images/newyork.jpg" alt="" />
+            <img src="images/newyork.jpg" alt="" >
           </div>
           <div class="slide">
-            <img src="images/burj-khalifa.jpg" alt="" />
+            <img src="images/burj-khalifa.jpg" alt="" >
           </div>
           <div class="slide">
-            <img src="images/brazil.jpg" alt="" />
+            <img src="images/brazil.jpg" alt="" >
+          </div>
+
+          <div class="slide">
+            <img src="images/berlin.jpg" alt="">
+
           </div>
 
           <div class="navigation-auto">
@@ -170,6 +184,7 @@
             <div class="auto-btn3"></div>
             <div class="auto-btn4"></div>
             <div class="auto-btn5"></div>
+            <div class="auto-btn6"></div>
           </div>
         </div>
 
@@ -179,11 +194,300 @@
           <label for="radio3" class="manual-btn"></label>
           <label for="radio4" class="manual-btn"></label>
           <label for="radio5" class="manual-btn"></label>
+          <label for="radio6" class="manual-btn"></label>
         </div>
       </div>
     </section>
 
-    <div></div>
+   
+
+
+
+
+    <section id="hx-offers-section">
+  
+      <div class="hx-container">
+    
+        <h2 class="hx-title">Special Offers</h2>
+        <p class="hx-subtitle">Don't miss out on our exclusive deals</p>
+
+    <div class="hx-grid">
+
+      <!-- Card 1 -->
+      <div class="hx-card">
+        <div class="hx-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" />
+          <span class="hx-badge">40% OFF</span>
+        </div>
+        <div class="hx-content">
+          <h3>Summer Sale</h3>
+          <p>Save up to 40% on flights to Europe</p>
+          <span class="hx-date">Valid until June 31, 2026</span>
+          <button class="hx-btn">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="hx-card">
+        <div class="hx-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" />
+          <span class="hx-badge">50% OFF</span>
+        </div>
+        <div class="hx-content">
+          <h3>Business Upgrade</h3>
+          <p>Fly business class at economy prices</p>
+          <span class="hx-date">Valid until June 15, 2026</span>
+          <button class="hx-btn">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="hx-card">
+        <div class="hx-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" />
+          <span class="hx-badge">30% OFF</span>
+        </div>
+        <div class="hx-content">
+          <h3>Asian Adventures</h3>
+          <p>Explore Asia with exclusive discounts</p>
+          <span class="hx-date">Valid until June 28, 2026</span>
+          <button class="hx-btn">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="hx-card">
+        <div class="hx-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" />
+          <span class="hx-badge">25% OFF</span>
+        </div>
+        
+        <div class="hx-content">
+          <h3>Dubai Escape</h3>
+          <p>Luxury trips at affordable prices</p>
+          <span class="hx-date">Valid until May 20, 2026</span>
+          <button class="hx-btn">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="hx-card">
+        <div class="hx-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" />
+          <span class="hx-badge">Coming soon</span>
+        </div>
+        
+        <div class="hx-content">
+          <h3>USA Tour</h3>
+          <p>Discover top cities in the USA</p>
+          <span class="hx-date">Valid until June 5, 2026</span>
+          <button class="hx-btn">Book Now</button>
+        </div>
+      </div>
+
+    </div>
+
+  
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section id="swg-why-section">
+  <div class="swg-container">
+
+    <h2 class="swg-title">Why Choose SkyWings</h2>
+    <p class="swg-subtitle">Experience the difference with our premium services</p>
+
+    <div class="swg-features">
+
+      <!-- Feature 1 -->
+      <div class="swg-feature-box">
+        <div class="swg-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Safe & Secure</h3>
+        <p>Your safety is our top priority with enhanced security measures</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="swg-feature-box">
+        <div class="swg-icon">
+          <i class="fas fa-headphones"></i>
+        </div>
+        <h3>24/7 Support</h3>
+        <p>Our customer service team is always ready to help you</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="swg-feature-box">
+        <div class="swg-icon">
+          <i class="fas fa-credit-card"></i>
+        </div>
+        <h3>Best Price Guarantee</h3>
+        <p>Find a lower price? We'll match it and give you extra credit</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="swg-feature-box">
+        <div class="swg-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <h3>Award Winning</h3>
+        <p>Recognized as the world's best airline for 5 consecutive years</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+    <section id="offers">
+    
+      <div class="swiper mySwiper">
+        <div class="container_offers">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box">
+              
+                <div class="img">
+                <img src="" alt="img">
+              </div>
+              
+              <div class="info2">
+                
+                <h2>Sky</h2>
+                <p></p>
+                
+                <div class="btn_offers">
+                  
+                  <button class="btn" type="submit">Book now</button>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+              
+            <div class="swiper-slide">
+              <div class="box">
+              <div class="img">
+                <img src="" alt="img">
+              </div>
+              
+              <div class="info2">
+                
+                <h2>Sky</h2>
+                <p></p>
+                
+                <div class="btn_offers">
+                  
+                  <button class="btn" type="submit">Book now</button>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+              
+            <div class="swiper-slide">
+              <div class="box">
+              <div class="img">
+                <img src="" alt="img">
+              </div>
+              
+              <div class="info2">
+                
+                <h2>Sky</h2>
+                <p></p>
+                
+                <div class="btn_offers">
+                  
+                  <button class="btn" type="submit">Book now</button>
+                
+                </div>
+
+              
+              </div>
+              
+            </div>  
+              
+          </div>
+            
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next">
+
+      </div>
+
+      <div class="swiper-button-prev">
+        
+      </div>
+
+      <div class="swiper-pagination">
+        
+      </div>
+
+
+     <div class="">
+
+        <h1 class="ppp">Special Offers</h1>
+        <p class="ppp">Don't miss out on our exclusive deals</p>
+      
+
+      <div class="">
+
+        <img src="" alt="">
+
+        <button id="" class="" type="submit">Book now</button>
+      </div>
+
+      <div class="">
+        <img src="" alt="">
+
+        <button class="" id="" type="submit">Book now</button>
+      </div>
+
+      <div class="">
+        <img src="" alt="">
+
+        <button type="submit" id="" class="">Book now</button>
+      </div>
+
+    </div> 
+
+
+
+    </section> -->
+
+
+
+
+
+
 
     <div class="headingg" id="yyy">
       <h1>About Us</h1>
@@ -258,268 +562,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js.js"></script>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="veiwport" content="width-device-width, initial-scale=1.0" />
-    <title>Airlines</title>
-    <link rel="stylesheet" href="external.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        scroll-behavior: smooth;
-      }
-      .nav-bar {
-        background-color: black;
-        margin-top: 0;
-        width: 100%;
-      }
 
-      .class1 {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-      }
-
-      .photo {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        background-image: url("images/plane.jpg");
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        top: 0;
-        bottom: 0;
-        display: table;
-      }
-
-      .paraphoto {
-        max-width: 450px;
-        min-width: 320px;
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
-      }
-
-      .paraphoto h1 {
-        font-family: "Century Gothic", sans-serif;
-        color: white;
-        font-size: 50px;
-      }
-
-      .paraphoto a {
-        color: white;
-        font-family: "Century Gothic", sans-serif;
-        text-decoration: none;
-        border: 2px solid white;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-weight: bold;
-      }
-
-      .paraphoto a:hover {
-        color: rgb(0, 200, 255);
-        border: 2px solid rgb(0, 200, 255);
-      }
-    </style>
-
-    <script>
-      var counter = 1;
-      setInterval(function () {
-        document.getElementById("radio" + counter).checked = true;
-        counter++;
-        if (counter > 5) {
-          counter = 1;
-        }
-      }, 5000);
-    </script>
-  </head>
-
-  <body>
-    <section class="nav-bar">
-      <div class="nav-container">
-        <div class="brand">
-          <a href="#"><img src="" /><img /></a>
-        </div>
-        <nav>
-          <div class="nav-mobile">
-            <a id="nav-toggle" href="#!"
-              ><span class="material-icons"></span></a>
-          </div>
-          <ul class="nav-list selected">
-            <li>
-              <a href="home.html">Home</a>
-            </li>
-            <li>
-              <a href="#ttt">Flights</a>
-            </li>
-            <li>
-              <a href="faq&feedb.html">FaQ & Feedback</a>
-            </li>
-            <li>
-              <a href="#yyy">About</a>
-            </li>
-            <li>
-              <a href="login.html">Login or Register</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-
-    <div id="top" class="class1">
-      <section class="photo">
-        <div class="paraphoto">
-          <h1>Travel With Us</h1>
-          <a href="bookflight.html">GET STARTED</a>
-        </div>
-      </section>
-    </div>
-
-    <section>
-      <div class="Flights" id="ttt">
-        <h1 class="ppp">lets tour the world</h1>
-      </div>
-
-      <div class="slider">
-        <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
-          <input type="radio" name="radio-btn" id="radio5" />
-
-          <div class="slide first">
-            <img src="images/paris.jpg" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/Pisa.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="images/newyork.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="images/burj-khalifa.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="images/brazil.jpg" alt="" />
-          </div>
-
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-            <div class="auto-btn5"></div>
-          </div>
-        </div>
-
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-          <label for="radio5" class="manual-btn"></label>
-        </div>
-      </div>
-    </section>
-
-    <div></div>
-
-    <div class="headingg" id="yyy">
-      <h1>About Us</h1>
-      <p>
-        Welcome to , a leading airline with a rich history and a commitment to
-        delivering exceptional service to our passengers. Since our
-        establishment 12 years ago, we have grown to become one of the most
-        trusted airlines in the industry.
-      </p>
-    </div>
-
-    <div class="cont">
-      <section class="about">
-        <div class="about-image">
-          <img src="images/image1.jpg" />
-        </div>
-        <div class="about-content">
-          <h2></h2>
-          <p>
-            Our mission is to provide safe, comfortable, and reliable air travel
-            to destinations around the world. We strive to exceed our customers'
-            expectations by offering exceptional service, innovative technology,
-            and convenient schedules. At , we are proud of our dedicated team of
-            professionals who are committed to ensuring your travel experience
-            is comfortable and stress-free. Our pilots, flight attendants,
-            ground crew, and customer service representatives are among the most
-            experienced and caring in the industry. We are passionate about
-            delivering the highest levels of safety, comfort, and convenience to
-            our passengers. We are committed to sustainability and reducing our
-            impact on the environment. We are constantly exploring innovative
-            ways to reduce our carbon footprint and ensure that our operations
-            are as eco-friendly as possible.Thank you for choosing [Airline
-            Name]. We look forward to welcoming you on board and providing you
-            with an unforgettable travel experience.
-          </p>
-          <a href="" class="read-more">Read More</a>
-        </div>
-      </section>
-    </div>
-
-    <footer class="footer">
-      <div class="contain">
-        <div class="row">
-          <div class="footer-col">
-            <h4>company</h4>
-            <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">affiliate program</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>get help</h4>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">shipping</a></li>
-              <li><a href="#">returns</a></li>
-              <li><a href="#">order status</a></li>
-              <li><a href="#">payment options</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
->>>>>>> d993208a91bb4af337db207f22e9c79365ccccf2
