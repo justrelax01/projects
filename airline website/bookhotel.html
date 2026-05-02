@@ -7,6 +7,7 @@
   <meta name="veiwport" content="width-device-width, initial-scale=1.0">
   <title>bookflight</title>
   <link rel="stylesheet" href="external.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
@@ -108,13 +109,13 @@ table {
             <h2 class="text-b">Booking Details</h2> 
             
             <div class="input1">
-            <input type="text" class="input-group" id="text-from" placeholder="From">
-            <input type="text" class="input-group" id="text-to" placeholder="To">
+            <input type="text" class="input-group" id="text-from" placeholder="country ">
+            <input type="text" class="input-group" id="text-to" placeholder="city ">
             <select class="input-group">
-              <option value="">Preffered Seating</option>
-              <option value="">Economy Class</option>
-              <option value="">Business Class</option>
-              <option value="">First Class</option>
+              <option value="">Preffered room</option>
+              <option value="">single room</option>
+              <option value="">double room</option>
+              <option value="">suite</option>
 
             </select>
 
@@ -128,17 +129,17 @@ table {
            
           
 
-           <div class="input3">
+           <!-- <div class="input3">
             <span class="text-select">Select Your Fare</span>
              <input type="radio" class="input-group" name="r">
             <label class="text-choice" for="input-group">One way</label>
              <input type="radio" class="input-group" name="r">
             <label class="text-choice" for="input-group">Round Trip</label>
           
-           </div>
+           </div> -->
 
            <div class="input4">
-            <input type="date" class="input-group" id="return-date" placeholder="Return Date">
+            <input type="date" class="input-group" id="return-date" >
             <input type="time" class="input-group" placeholder="Return time" id="return-time">
             <input type="text" class="input-group1" placeholder="Any Message">
 
@@ -174,10 +175,11 @@ table {
             <th>Email</th>
             <th>Age</th>
             <th>Phone Number</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Return Date</th>
-            <th>Return Time</th>
+            <th>city</th>
+            <th>country</th>
+            <th>booking Time</th>
+            <th>book date</th>
+            <th>hotel name</th>
             <th>Action</th>
           </tr>
         </thead>

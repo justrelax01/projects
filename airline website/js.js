@@ -1,4 +1,8 @@
 
+
+function nn(){
+  window.location.href="bookhotel.html";
+}
 /* Search flights */
 
 
@@ -124,6 +128,7 @@ function makeabooking() {
       <td>${textto}</td>
       <td>${returndate}</td>
       <td>${returntime}</td>
+      <td>hotel 1</td>
       <td><button onclick="deleteBooking(this)">Delete</button></td>
     `;
 
@@ -168,14 +173,14 @@ function submitlogin() {
     return;
   }
 
-  const passRegex =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,30}$/;
+  // const passRegex =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,30}$/;
 
-  if (pass.length < 8 || pass.length > 30 || !pass.match(passRegex) ) {
+  // if (pass.length < 8 || pass.length > 30 || !pass.match(passRegex) ) {
     
-    errorMessages2.innerHTML =
-    "password should be between 8 or 30 and should contain at least a capital letter and 1 special character and a number";
-    return;
-  }
+  //   errorMessages2.innerHTML =
+  //   "password should be between 8 or 30 and should contain at least a capital letter and 1 special character and a number";
+  //   return;
+  // }
  
   if (!email.includes("@")) {
     errorMessages1.innerHTML = "email should contain @";

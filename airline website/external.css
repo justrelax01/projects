@@ -1181,14 +1181,14 @@ ul{
 
 
 
-/*book a flight*/
+/*book a hotel*/
 
 .form{
     background-color: #000;
     height: 460px;
     width: 700px;
     margin: 120px;
-    padding: 20px;
+    padding: 40px;
     opacity: 0.7;
 }
 
