@@ -88,7 +88,8 @@
     
     <script>
       
-      document.getElementById('par_tickets_available').innerHTML=`
+
+document.getElementById('par_tickets_available').innerHTML=`
         <h1>Available Flights</h1>
         <p>Here are the flights available for your travel needs.</p>
       `;
@@ -129,6 +130,18 @@
           gate:"A24",
           price:1200,
           specialOffer:"Special Offer"
+        },
+
+        {
+          id:"BP4321",
+          cabinClass:"First",
+          from:{iata:"Bei",city:"beirut",time:"12:00",date:"july 05,2026"},
+          to:{iata:"Par",city:"paris",time:"16:30",date:"july 05,2026"},
+          returnDate:"july 15,2026",
+          passengers: 1,
+          gate:"C3",
+          price:1000,
+          specialOffer:null
         },
       ];
       
@@ -246,9 +259,64 @@
       const container = document.getElementById('tickets-container');
       container.innerHTML = flights.map(flight => createTicketHTML(flight)).join('');
  
-  
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  // Read the search from sessionStorage (null if user came directly)
+  const raw = sessionStorage.getItem('flightSearch');
+  const search = raw ? JSON.parse(raw) : null;
+
+  // Filter flights based on the search
+  // If no search was made, show all flights
+  let filteredFlights = flights;
+
+  if (search) {
+  filteredFlights = flights.filter(flight => {
+
+    // If from is empty string, skip that check
+    const fromMatch = search.from === '' ||
+      flight.from.city.toLowerCase().includes(search.from) ||
+      flight.from.iata.toLowerCase().includes(search.from);
+
+    const toMatch = search.to === '' ||
+      flight.to.city.toLowerCase().includes(search.to) ||
+      flight.to.iata.toLowerCase().includes(search.to);
+
+    // If cabinClass is empty string, skip that check
+    const classMatch = search.cabinClass === '' ||
+      flight.cabinClass.toLowerCase() === search.cabinClass;
+
+    const passengersMatch = flight.passengers >= search.passengers;
+
+    return fromMatch && toMatch && classMatch && passengersMatch;
+  });
+
+  // Update the heading
+  document.getElementById('par_tickets_available').innerHTML = `
+    <h1>Flights to ${search.to.charAt(0).toUpperCase() + search.to.slice(1)}</h1>
+    <p>Showing all available flights to this destination.</p>
+  `;
+}
+
+
+  // Show how many were found
+  document.getElementById('showing_nb_available').innerHTML =
+    filteredFlights.length > 0
+      ? `<p>Showing ${filteredFlights.length} available flight(s).</p>`
+      : `<p>No flights found matching your search. <a href="searchflights.html">Try again</a></p>`;
+
+  // Render — use filteredFlights instead of flights
+  const container = document.getElementById('tickets-container');
+  container.innerHTML = filteredFlights.map(flight => createTicketHTML(flight)).join('');
+
+  // Clear the search after rendering so next visit shows all flights
+  sessionStorage.removeItem('flightSearch');
+});
+
+
+      
     </script>
 
-    <!-- <script src="js.js"></script> -->
+    <script src="js.js"></script> 
 </body>
 </html>

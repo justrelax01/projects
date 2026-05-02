@@ -1,47 +1,48 @@
 
 
+
+
 function nn(){
   window.location.href="bookhotel.html";
 }
+
+
+
 /* Search flights */
 
+document.querySelector('.bk_search_form form').addEventListener('submit', function(e) {
+  e.preventDefault();   // stop the form from reloading the page
 
-document.addEventListener("DOMContentLoaded", () => {
-        const filterBtns = document.querySelectorAll(".bk-filter");
-        const allCards = document.querySelectorAll(".bk-card");
-        const statusText = document.getElementById("search-status");
+  // Grab what the user typed
+  const searchData = {
+    from:       document.getElementById('departure').value.trim().toLowerCase(),
+    to:         document.getElementById('arrival').value.trim().toLowerCase(),
+    date:       document.getElementById('departure-date').value,
+    returnDate: document.getElementById('return-date').value,
+    passengers: parseInt(document.getElementById('passengers').value),
+    cabinClass: document.getElementById('class').value   // "economy" / "business" / "first"
+  };
 
-        function showFilter(filter, label) {
-          statusText.textContent = `Searching ${label}...`;
-          filterBtns.forEach(btn => btn.disabled = true);
+  // Save it so flights.html can read it
+  sessionStorage.setItem('flightSearch', JSON.stringify(searchData));
 
-          setTimeout(() => {
-            allCards.forEach(card => {
-              if (filter === "all" || card.dataset.category === filter) {
-                card.style.display = "flex";
-              } else {
-                card.style.display = "none";
-              }
-            });
-            statusText.textContent = filter === "all"
-              ? "Showing all popular destinations."
-              : `Showing popular ${label} destinations.`;
-            filterBtns.forEach(btn => btn.disabled = false);
-          }, 250);
-        }
+  // Go to flights page
+  window.location.href = 'flights.html';
+});
 
-        filterBtns.forEach(btn => {
-          btn.addEventListener("click", () => {
-            const active = document.querySelector(".bk-filter.active");
-            if (active) active.classList.remove("active");
-            btn.classList.add("active");
-            showFilter(btn.dataset.filter, btn.textContent);
-          });
-        });
 
-        showFilter("all", "All");
-      });
+// Add this function anywhere in your JS
+function viewDestinationFlights(destination) {
+  // Save the destination as a search
+  sessionStorage.setItem('flightSearch', JSON.stringify({
+    from:       '',           // no departure filter — show all origins
+    to:         destination,  // filter by this destination
+    passengers: 1,
+    cabinClass: ''            // no class filter
+  }));
 
+  window.location.href = 'flights.html';
+}
 
 
 
@@ -254,7 +255,5 @@ function submitreg() {
 
 
 /* Flights page*/
-
-
 
 

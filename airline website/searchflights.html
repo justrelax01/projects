@@ -157,19 +157,19 @@
               </div>
               <div>
                 <label for="departure-date">Departure date</label>
-                <input type="date" id="departure-date" required>
+                <input type="date" id="departure-date" >
               </div>
               <div>
                 <label for="return-date">Return date</label>
-                <input type="date" id="return-date" required>
+                <input type="date" id="return-date" >
               </div>
               <div>
                 <label for="passengers">Passengers</label>
-                <input type="number" placeholder="1 passenger" id="passengers" min="1" value="1" required>
+                <input type="number" placeholder="1 passenger" id="passengers" min="1" value="1" >
               </div>
               <div>
                 <label for="class">Class</label>
-                <select id="class" required>
+                <select id="class" >
                   <option value="economy">Economy</option>
                   <option value="business">Business</option>
                   <option value="first">First</option>
@@ -207,7 +207,7 @@
       <!-- ASIA -->
       <div class="bk-card" data-category="asia">
         <div class="bk-card-image">
-          <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c" alt="Tokyo">
+          <img src="images/tokyo.jpg" alt="Tokyo">
           <span class="bk-card-badge">Popular</span>
           <span class="bk-card-price">from $450</span>
           <span class="bk-card-location">📍 Japan</span>
@@ -219,13 +219,13 @@
           <div class="bk-card-meta">
             <span>⏱ 7h 30m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('tokyo')">View Flights</button>
         </div>
       </div>
 
       <div class="bk-card" data-category="asia">
         <div class="bk-card-image">
-          <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0" alt="Singapore">
+          <img src="images/singapore.jpg" alt="Singapore">
           <span class="bk-card-badge">Popular</span>
           <span class="bk-card-price">from $180</span>
           <span class="bk-card-location">📍 Singapore</span>
@@ -237,13 +237,13 @@
           <div class="bk-card-meta">
             <span>⏱ 2h 15m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('singapore')">View Flights</button>
         </div>
       </div>
 
       <div class="bk-card" data-category="asia">
         <div class="bk-card-image">
-          <img src="https://images.unsplash.com/photo-1526481280691-3a3b0e3c5f8f" alt="Tehran">
+          <img src="images/tehran.jpg" alt="Tehran">
           <span class="bk-card-badge">Trending</span>
           <span class="bk-card-price">from $230</span>
           <span class="bk-card-location">📍 Iran</span>
@@ -255,7 +255,7 @@
           <div class="bk-card-meta">
             <span>⏱ 4h 20m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('tehran')">View Flights</button>
         </div>
       </div>
 
@@ -274,7 +274,7 @@
           <div class="bk-card-meta">
             <span>⏱ 8h 10m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('paris')">View Flights</button>
         </div>
       </div>
 
@@ -292,7 +292,7 @@
           <div class="bk-card-meta">
             <span>⏱ 7h 50m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('london')">View Flights</button>
         </div>
       </div>
 
@@ -310,7 +310,7 @@
           <div class="bk-card-meta">
             <span>⏱ 8h 30m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('barcelona')">View Flights</button>
         </div>
       </div>
 
@@ -328,7 +328,7 @@
           <div class="bk-card-meta">
             <span>⏱ 8h 45m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('madrid')">View Flights</button>
         </div>
       </div>
 
@@ -347,14 +347,14 @@
           <div class="bk-card-meta">
             <span>⏱ 8h 45m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('sydney')">View Flights</button>
         </div>
       </div>
 
       <!-- MIDDLE EAST -->
       <div class="bk-card" data-category="middleeast">
         <div class="bk-card-image">
-          <img src="https://images.unsplash.com/photo-1570729830364-fd4e92f34c6d" alt="Lebanon">
+          <img src="images/Rouche.jpg" alt="Lebanon">
           <span class="bk-card-badge bk-badge-special">Must Visit ✨</span>
           <span class="bk-card-price">from $250</span>
           <span class="bk-card-location">📍 Lebanon</span>
@@ -366,7 +366,7 @@
           <div class="bk-card-meta">
             <span>⏱ 3h 40m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('beirut')">View Flights</button>
         </div>
       </div>
 
@@ -384,16 +384,16 @@
           <div class="bk-card-meta">
             <span>⏱ 4h 15m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('baghdad')">View Flights</button>
         </div>
       </div>
 
       <div class="bk-card" data-category="middleeast">
         <div class="bk-card-image">
-          <img src="https://images.unsplash.com/photo-1642609228325-2bf84f8c1b1f" alt="Imam Hussein Makam">
+          <img src="images/karbala.jpg" alt="Imam Hussein Makam">
           <span class="bk-card-badge">Pilgrimage</span>
           <span class="bk-card-price">from $290</span>
-          <span class="bk-card-location">📍 Karbala</span>
+          <span class="bk-card-location">📍 Iraq</span>
           <span class="bk-card-rating">⭐ 4.8</span>
         </div>
         <div class="bk-card-content">
@@ -402,7 +402,7 @@
           <div class="bk-card-meta">
             <span>⏱ 4h 30m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('karbala')">View Flights</button>
         </div>
       </div>
 
@@ -420,7 +420,7 @@
           <div class="bk-card-meta">
             <span>⏱ 6h 05m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('dubai')">View Flights</button>
         </div>
       </div>
 
@@ -438,7 +438,7 @@
           <div class="bk-card-meta">
             <span>⏱ 5h 40m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('riyadh')">View Flights</button>
         </div>
       </div>
 
@@ -456,7 +456,7 @@
           <div class="bk-card-meta">
             <span>⏱ 5h 55m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('doha')">View Flights</button>
         </div>
       </div>
 
@@ -475,7 +475,7 @@
           <div class="bk-card-meta">
             <span>⏱ 11h 30m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('new-york')">View Flights</button>
         </div>
       </div>
 
@@ -493,7 +493,7 @@
           <div class="bk-card-meta">
             <span>⏱ 12h 50m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('rio-de-janeiro')">View Flights</button>
         </div>
       </div>
 
@@ -512,7 +512,7 @@
           <div class="bk-card-meta">
             <span>⏱ 9h 10m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('cairo')">View Flights</button>
         </div>
       </div>
 
@@ -530,7 +530,7 @@
           <div class="bk-card-meta">
             <span>⏱ 10h 20m</span>
           </div>
-          <button class="bk-card-button">View Flights</button>
+          <button class="bk-card-button" onclick="viewDestinationFlights('casablanca')">View Flights</button>
         </div>
       </div>
 
