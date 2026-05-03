@@ -6,7 +6,7 @@
   <title>FAQ & Feedback</title>
   <link rel="stylesheet" href="external.css">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
   
     :root {
@@ -483,114 +483,7 @@
   </div>
 
 
-  <script>
-    
-    const faqs = [
-      {
-        q: "How can I book a flight?",
-        a: "You can click on the 'Book a Flight' button on our home page. Our booking flow will guide you through selecting dates, passengers, and seats in just a few steps."
-      },
-      {
-        q: "Is there a hotel I can stay at after arriving at my destination?",
-        a: "Yes! We have partner hotels at most destinations. Call us on +42 67 89 98 90 for reservations and we'll arrange everything for you."
-      },
-      {
-        q: "How many stops are there during a flight?",
-        a: "It depends on the duration and route of your trip. Most flights are direct, but longer routes may include 1–2 stops. This is always displayed clearly during booking."
-      },
-      {
-        q: "Which restaurants are recommended during my trip?",
-        a: "Check our Instagram page for curated lists of restaurants at each destination, from street food to fine dining."
-      },
-      {
-        q: "Is there insurance available during the trip?",
-        a: "Absolutely — your safety is our top priority. Our medical and travel insurance system is active throughout the entire duration of your journey."
-      },
-      {
-        q: "Why does my account registration keep showing an error?",
-        a: "Double-check that your email address and password meet the requirements. If an account with your email already exists, please use the Sign In option instead."
-      },
-      {
-        q: "Am I allowed to bring food on board?",
-        a: "We welcome personal snacks on board. However, some destination countries restrict certain food items at customs. Please review your destination's import rules before travelling."
-      }
-    ];
-
-   
-    const faqList = document.getElementById('faq-list');
-    faqList.innerHTML = faqs.map((item, i) => `
-      <div class="faq-item" id="faq-${i}">
-        <button class="faq-question" onclick="toggleFAQ(${i})">
-          <span class="faq-question-text">${item.q}</span>
-          <span class="faq-icon">
-            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-          </span>
-        </button>
-        <div class="faq-answer">
-          <p>${item.a}</p>
-        </div>
-      </div>
-    `).join('');
-
-    
-    function toggleFAQ(index) {
-      const item = document.getElementById(`faq-${index}`);
-      const isOpen = item.classList.contains('open');
-
-      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
-
-      if (!isOpen) item.classList.add('open');
-    }
-
-    let selectedRating = 0;
-    const stars = document.querySelectorAll('.star');
-
-    stars.forEach(star => {
-      star.addEventListener('click', () => {
-        selectedRating = parseInt(star.dataset.val);
-        stars.forEach(s => {
-          s.classList.toggle('active', parseInt(s.dataset.val) <= selectedRating);
-        });
-      });
-
-      
-      star.addEventListener('mouseenter', () => {
-        stars.forEach(s => {
-          s.style.color = parseInt(s.dataset.val) <= parseInt(star.dataset.val) ? '#f59e0b' : '#d1d5db';
-        });
-      });
-
-      star.addEventListener('mouseleave', () => {
-        stars.forEach(s => {
-          s.style.color = parseInt(s.dataset.val) <= selectedRating ? '#f59e0b' : '#d1d5db';
-        });
-      });
-    });
-
-
-    document.getElementById('submit-btn').addEventListener('click', () => {
-      const name    = document.getElementById('fb-name').value.trim();
-      const email   = document.getElementById('fb-email').value.trim();
-      const message = document.getElementById('fb-message').value.trim();
-
-      
-      if (!name || !email || !message) {
-        alert('Please fill in your name, email, and message before sending.');
-        return;
-      }
-
-      
-      document.getElementById('success-msg').classList.add('show');
-
-      
-      document.getElementById('fb-name').value    = '';
-      document.getElementById('fb-email').value   = '';
-      document.getElementById('fb-topic').value   = '';
-      document.getElementById('fb-message').value = '';
-      stars.forEach(s => { s.classList.remove('active'); s.style.color = ''; });
-      selectedRating = 0;
-    });
-  </script>
+  <script src="js.js"></script>
 
   
 </body>
