@@ -10,7 +10,7 @@
 /* Search flights */
 document.addEventListener("DOMContentLoaded", function () {
 
-  /* Search flights */
+ 
   const searchForm = document.querySelector('.bk_search_form form');
   if (searchForm) {
     searchForm.addEventListener('submit', function (e) {
@@ -28,6 +28,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+function viewDestinationFlights(destination) {
+  sessionStorage.setItem('flightSearch', JSON.stringify({
+    from:       '',
+    to:         destination.toLowerCase(),  
+    passengers: 1,
+    cabinClass: ''
+  }));
+  window.location.href = 'flights.html';
+}
 
 
 
@@ -248,117 +258,6 @@ function submitreg() {
 
 
 
-const faqs = [
-      {
-        q: "How can I book a flight?",
-        a: "You can click on the 'Book a Flight' button on our home page. Our booking flow will guide you through selecting dates, passengers, and seats in just a few steps."
-      },
-      {
-        q: "Is there a hotel I can stay at after arriving at my destination?",
-        a: "Yes! We have partner hotels at most destinations. Call us on +42 67 89 98 90 for reservations and we'll arrange everything for you."
-      },
-      {
-        q: "How many stops are there during a flight?",
-        a: "It depends on the duration and route of your trip. Most flights are direct, but longer routes may include 1–2 stops. This is always displayed clearly during booking."
-      },
-      {
-        q: "Which restaurants are recommended during my trip?",
-        a: "Check our Instagram page for curated lists of restaurants at each destination, from street food to fine dining."
-      },
-      {
-        q: "Is there insurance available during the trip?",
-        a: "Absolutely — your safety is our top priority. Our medical and travel insurance system is active throughout the entire duration of your journey."
-      },
-      {
-        q: "Why does my account registration keep showing an error?",
-        a: "Double-check that your email address and password meet the requirements. If an account with your email already exists, please use the Sign In option instead."
-      },
-      {
-        q: "Am I allowed to bring food on board?",
-        a: "We welcome personal snacks on board. However, some destination countries restrict certain food items at customs. Please review your destination's import rules before travelling."
-      }
-    ];
-
-   
-    const faqList = document.getElementById('faq-list');
-    faqList.innerHTML = faqs.map((item, i) => `
-      <div class="faq-item" id="faq-${i}">
-        <button class="faq-question" onclick="toggleFAQ(${i})">
-          <span class="faq-question-text">${item.q}</span>
-          <span class="faq-icon">
-            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-          </span>
-        </button>
-        <div class="faq-answer">
-          <p>${item.a}</p>
-        </div>
-      </div>
-    `).join('');
-
-    
-    function toggleFAQ(index) {
-      const item = document.getElementById(`faq-${index}`);
-      const isOpen = item.classList.contains('open');
-
-      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
-
-      if (!isOpen) item.classList.add('open');
-    }
-
-    let selectedRating = 0;
-    const stars = document.querySelectorAll('.star');
-
-    stars.forEach(star => {
-      star.addEventListener('click', () => {
-        selectedRating = parseInt(star.dataset.val);
-        stars.forEach(s => {
-          s.classList.toggle('active', parseInt(s.dataset.val) <= selectedRating);
-        });
-      });
-
-      
-      star.addEventListener('mouseenter', () => {
-        stars.forEach(s => {
-          s.style.color = parseInt(s.dataset.val) <= parseInt(star.dataset.val) ? '#f59e0b' : '#d1d5db';
-        });
-      });
-
-      star.addEventListener('mouseleave', () => {
-        stars.forEach(s => {
-          s.style.color = parseInt(s.dataset.val) <= selectedRating ? '#f59e0b' : '#d1d5db';
-        });
-      });
-    });
-
-
-    document.getElementById('submit-btn').addEventListener('click', () => {
-      const name    = document.getElementById('fb-name').value.trim();
-      const email   = document.getElementById('fb-email').value.trim();
-      const message = document.getElementById('fb-message').value.trim();
-
-      
-      if (!name || !email || !message) {
-        alert('Please fill in your name, email, and message before sending.');
-        return;
-      }
-
-      
-      document.getElementById('success-msg').classList.add('show');
-
-      
-      document.getElementById('fb-name').value    = '';
-      document.getElementById('fb-email').value   = '';
-      document.getElementById('fb-topic').value   = '';
-      document.getElementById('fb-message').value = '';
-      stars.forEach(s => { s.classList.remove('active'); s.style.color = ''; });
-      selectedRating = 0;
-    });
-
-
-
-
-
-
 
 
 
@@ -382,8 +281,8 @@ document.getElementById('par_tickets_available').innerHTML=`
       {
           id:         "AA1425",
           cabinClass: "Economy",
-          from: { iata: "NYC", city: "New York",  time: "07:30", date: "May 15, 2026" },
-          to:   { iata: "LON", city: "London",    time: "19:45", date: "May 15, 2026" },
+          from: { iata: "NYC", city: "new york",  time: "07:30", date: "May 15, 2026" },
+          to:   { iata: "LON", city: "london",    time: "19:45", date: "May 15, 2026" },
           returnDate: "May 22, 2026",
           passengers: 1,
           gate:       "F18",
@@ -405,8 +304,8 @@ document.getElementById('par_tickets_available').innerHTML=`
         {
           id:"DL5673",
           cabinClass:"Economy",
-          from:{iata:"MIA", city:"Miami", time:"9:15",date :"June 02,2026"},
-          to:{iata:"PAR",city:"Paris",time:"23:40",date:"June 02,2026"},
+          from:{iata:"MIA", city:"miami", time:"9:15",date :"June 02,2026"},
+          to:{iata:"PAR",city:"paris",time:"23:40",date:"June 02,2026"},
           returnDate:"June 10,2026",
           passengers: 2,
           gate:"A24",
@@ -427,7 +326,7 @@ document.getElementById('par_tickets_available').innerHTML=`
         },
       ];
       
-      // Display number of available flights
+      
       document.getElementById('showing_nb_available').innerHTML=`
         <p>Showing ${flights.length} available flights.</p>
       `;
@@ -530,7 +429,7 @@ document.getElementById('par_tickets_available').innerHTML=`
                 <div class="price-label">Total Price</div>
                 <div class="price-amount">$${flight.price.toLocaleString()}</div>
                 ${perPersonHTML}
-                <button class="addtocart-btn" onclick="buynow()">Buy now</button>
+                <button class="addtocart-btn" onclick="buynow(${flights.indexOf(flight)})">Buy now</button>
               </div>
             </div>
  
@@ -545,28 +444,30 @@ document.getElementById('par_tickets_available').innerHTML=`
 document.addEventListener("DOMContentLoaded", function () {
 
   const parTickets = document.getElementById('par_tickets_available');
-  if (!parTickets) return; // ✅ not on flights page, stop here
+  if (!parTickets) return; 
 
   const raw = sessionStorage.getItem('flightSearch');
   const search = raw ? JSON.parse(raw) : null;
-  let filteredFlights = flights; // default = show all
+  let filteredFlights = flights; 
 
   if (search) {
     filteredFlights = flights.filter(flight => {
-      const fromMatch = search.from === '' ||
-        flight.from.city.toLowerCase().includes(search.from) ||
-        flight.from.iata.toLowerCase().includes(search.from);
+  const fromMatch = !search.from ||
+    flight.from.city.toLowerCase().includes(search.from) ||
+    flight.from.iata.toLowerCase().includes(search.from);
 
-      const toMatch = search.to === '' ||
-        flight.to.city.toLowerCase().includes(search.to) ||
-        flight.to.iata.toLowerCase().includes(search.to);
+  const toMatch = !search.to ||
+    flight.to.city.toLowerCase().includes(search.to) ||
+    flight.to.iata.toLowerCase().includes(search.to);
 
-      const classMatch = search.cabinClass === '' ||
-        flight.cabinClass.toLowerCase() === search.cabinClass;
+  const classMatch = !search.cabinClass ||
+    flight.cabinClass.toLowerCase() === search.cabinClass;
 
-      const passengersMatch = flight.passengers >= search.passengers;
+  const passengersMatch = !search.passengers || 
+    flight.passengers >= search.passengers;
 
-      return fromMatch && toMatch && classMatch && passengersMatch;
+  return fromMatch && toMatch && classMatch && passengersMatch;
+
     });
 
     parTickets.innerHTML = `
@@ -574,7 +475,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <p>Showing all available flights to this destination.</p>
     `;
   } else {
-    // ✅ No search = show all flights with default heading
+
     parTickets.innerHTML = `
       <h1>Available Flights</h1>
       <p>Here are the flights available for your travel needs.</p>
@@ -593,6 +494,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function buynow(){
-  window.location.href="payment.html";
+function buynow(index) {
+  sessionStorage.setItem('selectedFlight', JSON.stringify(flights[index]));
+  window.location.href = "payment.html";
 }
+
+
+
+
+
+
+// payment page
+
+
+
+
+
